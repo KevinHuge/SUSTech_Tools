@@ -1,0 +1,2861 @@
+{
+    "semester": "2025-20261",
+    "courses": {
+        "生物学原理-01班-双语": {
+            "id": "32284B64BC8FC5BAE063CA0412AC6731",
+            "type": "bxxk"
+        },
+        "生物学原理-02班-英文": {
+            "id": "33465F8A34600851E063CB0412ACBB6D",
+            "type": "bxxk"
+        },
+        "生物学原理-03班-双语": {
+            "id": "33468C418FB01C34E063CB0412AC526B",
+            "type": "bxxk"
+        },
+        "生物学原理-04班-双语": {
+            "id": "33468C418FB81C34E063CB0412AC526B",
+            "type": "bxxk"
+        },
+        "生物学原理-05班-双语": {
+            "id": "33468C418FC01C34E063CB0412AC526B",
+            "type": "bxxk"
+        },
+        "大学化学-01班-双语": {
+            "id": "322BDD9DD390B340E063CA0412AC9C2B",
+            "type": "bxxk"
+        },
+        "大学化学-02班-双语": {
+            "id": "334604893A72EF56E063CB0412AC47EB",
+            "type": "bxxk"
+        },
+        "大学化学-03班-双语": {
+            "id": "334604893A77EF56E063CB0412AC47EB",
+            "type": "bxxk"
+        },
+        "大学化学-04班-双语": {
+            "id": "334604893A7CEF56E063CB0412AC47EB",
+            "type": "bxxk"
+        },
+        "大学化学-05班-英文": {
+            "id": "334604893A81EF56E063CB0412AC47EB",
+            "type": "bxxk"
+        },
+        "Java程序设计基础-01班-英文": {
+            "id": "3227BFF96F7F658AE063CA0412ACCCEC",
+            "type": "bxxk"
+        },
+        "C程序设计基础-01班-英文": {
+            "id": "3227692BE5BA2C85E063CA0412AC1A58",
+            "type": "bxxk"
+        },
+        "C程序设计基础-02班-英文": {
+            "id": "36E433DE88FA9DDAE063CA0412AC2BF4",
+            "type": "bxxk"
+        },
+        "Python程序设计基础-01班-双语": {
+            "id": "31AE0C3B22B1950FE063CA0412ACA056",
+            "type": "bxxk"
+        },
+        "Python程序设计基础-02班-双语": {
+            "id": "32CE9A5EE5774FADE063CB0412ACC9F8",
+            "type": "bxxk"
+        },
+        "Python程序设计基础-03班-双语": {
+            "id": "32CE9A5EE5784FADE063CB0412ACC9F8",
+            "type": "bxxk"
+        },
+        "Python程序设计基础-04班-英文": {
+            "id": "32CE9A5EE5794FADE063CB0412ACC9F8",
+            "type": "bxxk"
+        },
+        "Python程序设计基础-05班-双语": {
+            "id": "32CE9A5EE57A4FADE063CB0412ACC9F8",
+            "type": "bxxk"
+        },
+        "Python程序设计基础-06班-双语": {
+            "id": "32CE9A5EE57B4FADE063CB0412ACC9F8",
+            "type": "bxxk"
+        },
+        "Matlab程序设计基础-01班-英文": {
+            "id": "3227692BE5BB2C85E063CA0412AC1A58",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-匹克球1班": {
+            "id": "32285C247605D52BE063CA0412AC75FD",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-健身2班": {
+            "id": "359CCBC4DA670264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-网球1班": {
+            "id": "359CCBC4DA6B0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-搏击1班": {
+            "id": "359CCBC4DA6F0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-羽毛球4班": {
+            "id": "359CCBC4DA730264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-传统武术1班": {
+            "id": "359CCBC4DA770264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-匹克球2班": {
+            "id": "359CCBC4DA7B0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-运动与体能（塑形）1班": {
+            "id": "359CCBC4DA7F0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-乒乓球（进阶）1班": {
+            "id": "359CCBC4DA830264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-篮球1班": {
+            "id": "359CCBC4DA870264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-排球1班": {
+            "id": "359CCBC4DA8B0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-羽毛球3班": {
+            "id": "359CCBC4DA8F0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-排球2班": {
+            "id": "359CCBC4DA930264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-运动与体能（塑形）2班": {
+            "id": "359CCBC4DA970264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-攀岩1班": {
+            "id": "359CCBC4DA9B0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-定向越野2班": {
+            "id": "359CCBC4DA9F0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-游泳（进阶）2班": {
+            "id": "359CCBC4DAA30264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-散打1班": {
+            "id": "359CCBC4DAA70264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-定向越野1班": {
+            "id": "359CCBC4DAAB0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-羽毛球1班": {
+            "id": "359CCBC4DAAF0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-体育舞蹈1班": {
+            "id": "359CCBC4DAB30264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-户外运动1班": {
+            "id": "359CCBC4DAB70264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-瑜伽1班": {
+            "id": "359CCBC4DABB0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-羽毛球2班": {
+            "id": "359CCBC4DABF0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-网球2班": {
+            "id": "359CCBC4DAC30264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-跆拳道1班": {
+            "id": "359CCBC4DAC70264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-游泳（进阶）1班": {
+            "id": "359CCBC4DACB0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-足球1班": {
+            "id": "359CCBC4DACF0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-水域运动1班": {
+            "id": "359CCBC4DAD30264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-轮滑1班": {
+            "id": "359CCBC4DAD70264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-足球2班": {
+            "id": "359CCBC4DADB0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-防身与格斗1班": {
+            "id": "359CCBC4DADF0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-咏春1班": {
+            "id": "359CCBC4DAE30264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-健美操1班": {
+            "id": "359CCBC4DAE70264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-健身1班": {
+            "id": "359CCBC4DAEB0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-网球3班": {
+            "id": "359CCBC4DAEF0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-篮球2班": {
+            "id": "359CCBC4DAF30264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-空手道1班": {
+            "id": "359CCBC4DAF70264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "体育Ⅴ-中文-太极保健课1班": {
+            "id": "359CCBC4DAFB0264E063CA0412ACA8CA",
+            "type": "bxxk"
+        },
+        "数学分析I-01班-中文": {
+            "id": "32280EDEC8A29D62E063CA0412AC01DF",
+            "type": "bxxk"
+        },
+        "数学分析I-02班-中文": {
+            "id": "33411F489349D94FE063CB0412AC5F27",
+            "type": "bxxk"
+        },
+        "高等代数 I-01班-中文": {
+            "id": "32280EDEC84E9D62E063CA0412AC01DF",
+            "type": "bxxk"
+        },
+        "普通物理学（上）-01班-双语": {
+            "id": "323B678C36F1E157E063CB0412AC1ED5",
+            "type": "bxxk"
+        },
+        "植物与人类健康-01班-中文": {
+            "id": "3510C567624BE189E063CB0412AC6CA6",
+            "type": "xxxk"
+        },
+        "植物应用之插花技艺-01班-中文": {
+            "id": "3488400013F1C906E063CB0412ACC76E",
+            "type": "xxxk"
+        },
+        "植物应用之插花技艺-02班-中文": {
+            "id": "3488400013F8C906E063CB0412ACC76E",
+            "type": "xxxk"
+        },
+        "化学与探索-01班-双语": {
+            "id": "32B54AF4285499BEE063CA0412AC1753",
+            "type": "xxxk"
+        },
+        "基础西班牙语-01班-英文": {
+            "id": "335913D97B46F6B3E063CB0412AC028C",
+            "type": "xxxk"
+        },
+        "基础西班牙语-02班-英文": {
+            "id": "336E4BCB4E70BC4DE063CA0412AC9BAC",
+            "type": "xxxk"
+        },
+        "基础法语-01班-英文": {
+            "id": "33590A055B5BF541E063CB0412AC7437",
+            "type": "xxxk"
+        },
+        "基础法语-02班-英文": {
+            "id": "336E4C52C03FBCFCE063CA0412ACBD9C",
+            "type": "xxxk"
+        },
+        "欧洲语言与文化-01班-英文": {
+            "id": "33592526F9D52ACFE063CA0412AC48EB",
+            "type": "xxxk"
+        },
+        "欧洲语言与文化-02班-英文": {
+            "id": "336E4C52C03ABCFCE063CA0412ACBD9C",
+            "type": "xxxk"
+        },
+        "English for Real-world Financial Communication-01班-英文": {
+            "id": "33BA7521EF6D12B0E063CA0412ACD41F",
+            "type": "xxxk"
+        },
+        "English for Real-world Financial Communication-02班-英文": {
+            "id": "33BAA9E7BA8016AEE063CA0412AC8861",
+            "type": "xxxk"
+        },
+        "人工智能时代的电子信息科学技术-01班-双语": {
+            "id": "322D4ADAC4EEF156E063CB0412AC20F5",
+            "type": "xxxk"
+        },
+        "全球气候变化-01班-中文": {
+            "id": "3267A5B669A0279CE063CA0412AC2D32",
+            "type": "xxxk"
+        },
+        "地震-01班-双语": {
+            "id": "33BE5007C0852830E063CA0412ACBBDC",
+            "type": "xxxk"
+        },
+        "极地探索-01班-双语": {
+            "id": "33BE5007C07F2830E063CA0412ACBBDC",
+            "type": "xxxk"
+        },
+        "自然灾害学-01班-双语": {
+            "id": "32770B9D2D0C7707E063CB0412AC7C99",
+            "type": "xxxk"
+        },
+        "中国式现代化的深圳实践创新-01班-中文": {
+            "id": "33F55CE0F3C1E7B4E063CA0412AC79B6",
+            "type": "xxxk"
+        },
+        "心理学-01班-中文": {
+            "id": "32E2124C473AE018E063CA0412AC665B",
+            "type": "xxxk"
+        },
+        "心理学-02班-中文": {
+            "id": "32E2017454EB5B06E063CB0412AC1127",
+            "type": "xxxk"
+        },
+        "市场营销管理-01班-中文": {
+            "id": "32E22C8899ECE90DE063CA0412ACFA5B",
+            "type": "xxxk"
+        },
+        "创业管理-01班-中文": {
+            "id": "3277C29F6BF0AD4DE063CB0412AC320D",
+            "type": "xxxk"
+        },
+        "人格塑造十五讲-01班-中文": {
+            "id": "32E2124C4740E018E063CA0412AC665B",
+            "type": "xxxk"
+        },
+        "人格塑造十五讲-02班-中文": {
+            "id": "32E21F14F8095D4EE063CB0412AC2A42",
+            "type": "xxxk"
+        },
+        "人格塑造十五讲-03班-中文": {
+            "id": "32E21F14F80E5D4EE063CB0412AC2A42",
+            "type": "xxxk"
+        },
+        "人格塑造十五讲-04班-中文": {
+            "id": "32E21F14F8135D4EE063CB0412AC2A42",
+            "type": "xxxk"
+        },
+        "走进舞台剧-01班-中文": {
+            "id": "32B899BFE7DE48C9E063CA0412AC2900",
+            "type": "xxxk"
+        },
+        "走进舞台剧-02班-中文": {
+            "id": "32B89CE50C834EA0E063CA0412AC5F28",
+            "type": "xxxk"
+        },
+        "乐理与视唱练耳-01班-中文": {
+            "id": "32B8A930CB1C4DEFE063CA0412AC0857",
+            "type": "xxxk"
+        },
+        "乐理与视唱练耳-02班-中文": {
+            "id": "32B8AD0A727C4718E063CA0412AC2ADB",
+            "type": "xxxk"
+        },
+        "教你唱歌-01班-中文": {
+            "id": "32B8AEB6C029C7F6E063CB0412ACA5FB",
+            "type": "xxxk"
+        },
+        "教你唱歌-02班-中文": {
+            "id": "32B899BFE7E548C9E063CA0412AC2900",
+            "type": "xxxk"
+        },
+        "流行音乐赏析与演唱-01班-中文": {
+            "id": "32B8D47E1BF159A0E063CA0412ACE862",
+            "type": "xxxk"
+        },
+        "朗诵艺术-01班-中文": {
+            "id": "32B8D90DEA8B6627E063CA0412ACF5EF",
+            "type": "xxxk"
+        },
+        "朗诵艺术-02班-中文": {
+            "id": "32B8D90DEA926627E063CA0412ACF5EF",
+            "type": "xxxk"
+        },
+        "艺术实践课Ⅰ-01班-中文": {
+            "id": "32B8E2FBDF8467CBE063CA0412ACF634",
+            "type": "xxxk"
+        },
+        "中国戏曲美学-01班-中文": {
+            "id": "32B8E908BFE586D3E063CA0412AC9A53",
+            "type": "xxxk"
+        },
+        "宋代院体工笔花鸟画临习-01班-中文": {
+            "id": "32B8ECCC0385E2DCE063CB0412ACE29B",
+            "type": "xxxk"
+        },
+        "宋代院体工笔花鸟画临习-02班-中文": {
+            "id": "32B8E2FBDF8A67CBE063CA0412ACF634",
+            "type": "xxxk"
+        },
+        "俄罗斯音乐赏析-01班-中文": {
+            "id": "32B8ECCC038BE2DCE063CB0412ACE29B",
+            "type": "xxxk"
+        },
+        "俄罗斯音乐赏析-02班-中文": {
+            "id": "32B8F63D4A238992E063CA0412ACE3E8",
+            "type": "xxxk"
+        },
+        "中国美术史-01班-中文": {
+            "id": "32B8F63D4A2B8992E063CA0412ACE3E8",
+            "type": "xxxk"
+        },
+        "中国声乐作品赏析-01班-中文": {
+            "id": "32B8F63D4A318992E063CA0412ACE3E8",
+            "type": "xxxk"
+        },
+        "外国音乐赏析-德奥篇-01班-中文": {
+            "id": "32B9203764E49089E063CA0412AC8143",
+            "type": "xxxk"
+        },
+        "外国音乐赏析-德奥篇-02班-中文": {
+            "id": "32B8F63D4A388992E063CA0412ACE3E8",
+            "type": "xxxk"
+        },
+        "艺术概论-01班-中文": {
+            "id": "32B9BB89B39806B6E063CA0412AC43C2",
+            "type": "xxxk"
+        },
+        "艺术概论-02班-中文": {
+            "id": "32B9BB89B39F06B6E063CA0412AC43C2",
+            "type": "xxxk"
+        },
+        "设计艺术史-01班-中文": {
+            "id": "32B9BB89B3A506B6E063CA0412AC43C2",
+            "type": "xxxk"
+        },
+        "设计艺术史-02班-中文": {
+            "id": "32B9E9F530370CAFE063CA0412AC58C7",
+            "type": "xxxk"
+        },
+        "中国戏曲简史与赏析-01班-中文": {
+            "id": "32C9D7D752B7E1C5E063CA0412AC7897",
+            "type": "xxxk"
+        },
+        "合唱-01班-中文": {
+            "id": "32C9D7D752BEE1C5E063CA0412AC7897",
+            "type": "xxxk"
+        },
+        "西方音乐简史-01班-英文": {
+            "id": "32CCBCC9EF5E4E47E063CA0412AC65AD",
+            "type": "xxxk"
+        },
+        "钢琴作品赏析-01班-中文": {
+            "id": "32CCC06A3ED571CDE063CA0412ACDCCB",
+            "type": "xxxk"
+        },
+        "钢琴作品赏析-02班-中文": {
+            "id": "32CCC3FE27ED1301E063CB0412ACD100",
+            "type": "xxxk"
+        },
+        "钢琴作品赏析-03班-中文": {
+            "id": "32CCC3FE27F21301E063CB0412ACD100",
+            "type": "xxxk"
+        },
+        "外国器乐作品赏析-01班-中文": {
+            "id": "32CCC3FE27F81301E063CB0412ACD100",
+            "type": "xxxk"
+        },
+        "国画实训-01班-中文": {
+            "id": "32DC661BD5ACCD72E063CA0412AC7DE6",
+            "type": "xxxk"
+        },
+        "朗诵实训-01班-中文": {
+            "id": "32DC71B53819D69DE063CA0412AC922E",
+            "type": "xxxk"
+        },
+        "歌唱实训-01班-中文": {
+            "id": "32DC7714CE3D26A7E063CB0412ACAF5E",
+            "type": "xxxk"
+        },
+        "钢琴演奏实训-01班-中文": {
+            "id": "32DC7C4E9FFE2B33E063CB0412ACD100",
+            "type": "xxxk"
+        },
+        "钢琴演奏实训-02班-中文": {
+            "id": "32DC9067B41F3561E063CB0412ACA378",
+            "type": "xxxk"
+        },
+        "中外影视音乐赏析-01班-中文": {
+            "id": "349C1D8CBDC71C04E063CA0412ACFE6D",
+            "type": "xxxk"
+        },
+        "教育社会学导论-01班-双语": {
+            "id": "33409C2BC6157680E063CA0412AC4192",
+            "type": "xxxk"
+        },
+        "中外教育名家名著-01班-双语": {
+            "id": "3643A9F70F3FCDD3E063CA0412AC0F46",
+            "type": "xxxk"
+        },
+        "跨文化教育-01班-双语": {
+            "id": "3340DFE5619D9D39E063CA0412AC3650",
+            "type": "xxxk"
+        },
+        "教育心理学导论-01班-双语": {
+            "id": "338390BB663773C1E063CA0412ACBD84",
+            "type": "xxxk"
+        },
+        "科幻创作-01班-中文": {
+            "id": "32BA9D0D83B556F1E063CA0412ACF0C4",
+            "type": "xxxk"
+        },
+        "走近《一千零一夜》-01班-中文": {
+            "id": "32BAA8DDDD0B1EE9E063CB0412AC9D0C",
+            "type": "xxxk"
+        },
+        "语音学-01班-中文": {
+            "id": "32BA9D0D83BC56F1E063CA0412ACF0C4",
+            "type": "xxxk"
+        },
+        "西方文学经典导读-01班-中文": {
+            "id": "32BA9792C86559CDE063CA0412ACD448",
+            "type": "xxxk"
+        },
+        "中华经典导读-01班-中文": {
+            "id": "32BAD6538DF3586CE063CA0412AC158F",
+            "type": "xxxk"
+        },
+        "伊斯兰艺术与建筑-01班-中文": {
+            "id": "32BAED959E14897CE063CA0412ACA71C",
+            "type": "xxxk"
+        },
+        "中国古典文学经典选读-01班-中文": {
+            "id": "32BB090124633B63E063CB0412AC9D5B",
+            "type": "xxxk"
+        },
+        "中国古典文学经典选读-02班-中文": {
+            "id": "32BB0A82A4C59766E063CA0412AC38FE",
+            "type": "xxxk"
+        },
+        "中国古典文学经典选读-03班-中文": {
+            "id": "32BB0A82A4CA9766E063CA0412AC38FE",
+            "type": "xxxk"
+        },
+        "唐宋诗赏析-01班-中文": {
+            "id": "34AF71D1F73A983EE063CA0412ACCDDB",
+            "type": "xxxk"
+        },
+        "唐宋诗赏析-02班-中文": {
+            "id": "34AF71D1F741983EE063CA0412ACCDDB",
+            "type": "xxxk"
+        },
+        "唐宋诗赏析-03班-中文": {
+            "id": "34AF71D1F746983EE063CA0412ACCDDB",
+            "type": "xxxk"
+        },
+        "科学逻辑导论-01班-双语": {
+            "id": "33BE4469732B350EE063CA0412AC7E18",
+            "type": "xxxk"
+        },
+        "创新创业大讲堂1-01班-中文": {
+            "id": "3277C29F6BECAD4DE063CB0412AC320D",
+            "type": "xxxk"
+        },
+        "飞行模拟实验-01班-双语": {
+            "id": "323C88ABB8371BC6E063CA0412AC6E97",
+            "type": "xxxk"
+        },
+        "飞行模拟实验-02班-双语": {
+            "id": "323C88ABB83D1BC6E063CA0412AC6E97",
+            "type": "xxxk"
+        },
+        "飞行模拟实验-03班-双语": {
+            "id": "323C88ABB8421BC6E063CA0412AC6E97",
+            "type": "xxxk"
+        },
+        "航空航天与力学概论-01班-中文": {
+            "id": "323C809778172D1BE063CA0412AC08A2",
+            "type": "xxxk"
+        },
+        "现代机械工程导论-01班-双语": {
+            "id": "337ED05C9A350417E063CB0412AC0925",
+            "type": "xxxk"
+        },
+        "生物医学基础-01班-双语": {
+            "id": "32B9059B8086D90BE063CB0412AC01CC",
+            "type": "xxxk"
+        },
+        "大数据里的全球健康-01班-双语": {
+            "id": "32B9BE0FAEE2F121E063CA0412AC91AD",
+            "type": "xxxk"
+        },
+        "饮食与健康-01班-双语": {
+            "id": "32B9CD7A2BB21676E063CB0412ACBF73",
+            "type": "xxxk"
+        },
+        "诺贝尔奖与医学-01班-双语": {
+            "id": "32B9BE0FAEE8F121E063CA0412AC91AD",
+            "type": "xxxk"
+        },
+        "新药的发现与应用-01班-双语": {
+            "id": "32B9C3CA69260CA5E063CA0412AC8A1E",
+            "type": "xxxk"
+        },
+        "舌尖上的健康-01班-双语": {
+            "id": "32B9B249AAF6F827E063CA0412ACD0F7",
+            "type": "xxxk"
+        },
+        "认识我们的大脑-01班-双语": {
+            "id": "32B9CD7A2BAC1676E063CB0412ACBF73",
+            "type": "xxxk"
+        },
+        "生物医学文献智能检索与写作-01班-双语": {
+            "id": "33BB4C0E4C792F2DE063CB0412AC21C1",
+            "type": "xxxk"
+        },
+        "临床营养学-01班-双语": {
+            "id": "33BB4C0E4C7F2F2DE063CB0412AC21C1",
+            "type": "xxxk"
+        },
+        "材料科学进展-01班-双语": {
+            "id": "33F71563F8153D51E063CB0412ACB53F",
+            "type": "xxxk"
+        },
+        "材料科学中的AI方法导论-01班-双语": {
+            "id": "33F72619C41D3E06E063CB0412ACE305",
+            "type": "xxxk"
+        },
+        "人工智能模型与算法导论-01班-双语": {
+            "id": "34E8AFA06B5C7DA9E063CA0412ACC762",
+            "type": "xxxk"
+        },
+        "微电子及集成电路基础-01班-双语": {
+            "id": "32B86F7DAFF73804E063CA0412AC98F8",
+            "type": "xxxk"
+        },
+        "集成电路概论-01班-双语": {
+            "id": "33FA5214373313C8E063CB0412AC9FC6",
+            "type": "xxxk"
+        },
+        "中外文化记忆研究-01班-中文": {
+            "id": "32CDFEF1DEB717F8E063CA0412AC0F2E",
+            "type": "xxxk"
+        },
+        "文化遗产概论-01班-中文": {
+            "id": "32CE576C0CBD3ED8E063CB0412AC7E1C",
+            "type": "xxxk"
+        },
+        "影视拍摄与编辑基础-01班-中文": {
+            "id": "32CE9CAA73215019E063CB0412AC5C61",
+            "type": "xxxk"
+        },
+        "考古发现与中国历史-01班-中文": {
+            "id": "32CE824D2E3B22FDE063CA0412AC10C5",
+            "type": "xxxk"
+        },
+        "可持续发展导论-01班-英文": {
+            "id": "32B8E4AE819666B8E063CA0412ACD41F",
+            "type": "xxxk"
+        },
+        "二十世纪中国物理学与物理学家-01班-双语": {
+            "id": "3883CA8B76A2CE0EE063CB0412AC30B7",
+            "type": "xxxk"
+        },
+        "走近突发公共卫生事件-01班-中文": {
+            "id": "32CE24BE634233F1E063CA0412ACA7AD",
+            "type": "xxxk"
+        },
+        "改变世界的流行病-01班-双语": {
+            "id": "32CDFEF1DEBE17F8E063CA0412AC0F2E",
+            "type": "xxxk"
+        },
+        "外国文学经典十六讲-01班-中文": {
+            "id": "32CDC96A988FE63FE063CA0412AC919B",
+            "type": "xxxk"
+        },
+        "人类演化简史-01班-英文": {
+            "id": "32CE3B98280638DEE063CB0412AC4C54",
+            "type": "xxxk"
+        },
+        "旧石器时代的艺术与符号-01班-英文": {
+            "id": "32CE440FE69E31A8E063CA0412AC4439",
+            "type": "xxxk"
+        },
+        "交通与中国近现代社会-01班-中文": {
+            "id": "32CE623EBE5746F5E063CB0412AC9EE1",
+            "type": "xxxk"
+        },
+        "影视与近代中国-01班-中文": {
+            "id": "32CEA614EB7D3BB8E063CA0412AC8639",
+            "type": "xxxk"
+        },
+        "应急管理学概论-01班-双语": {
+            "id": "33E454A112193511E063CA0412AC7866",
+            "type": "xxxk"
+        },
+        "世界纪录片历史与赏析-01班-中文": {
+            "id": "33E447FC9EDFF479E063CB0412AC0752",
+            "type": "xxxk"
+        },
+        "计算机系统设计及应用A-01班-英文-1组": {
+            "id": "32C9E68B85B75390E063CB0412AC05CB",
+            "type": "kzyxk"
+        },
+        "计算机系统设计及应用A-01班-英文-2组": {
+            "id": "32C9E68B85B95390E063CB0412AC05CB",
+            "type": "kzyxk"
+        },
+        "计算机系统设计及应用A-01班-英文-3组": {
+            "id": "32C9E68B85BB5390E063CB0412AC05CB",
+            "type": "kzyxk"
+        },
+        "数据库原理（H）-01班-双语": {
+            "id": "3227BFF96EFF658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "离散数学（H）-01班-双语": {
+            "id": "3227BFF96F00658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "数据结构与算法分析（H）-01班-英文": {
+            "id": "3227BFF96F01658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "计算机高级程序设计-01班-英文": {
+            "id": "33CF6C57205A9E71E063CA0412AC2756",
+            "type": "kzyxk"
+        },
+        "嵌入式系统与微机原理-01班-双语-1组": {
+            "id": "32C9F35071B85BC0E063CB0412ACF720",
+            "type": "kzyxk"
+        },
+        "嵌入式系统与微机原理-01班-双语-2组": {
+            "id": "32C9F35071BA5BC0E063CB0412ACF720",
+            "type": "kzyxk"
+        },
+        "嵌入式系统与微机原理-01班-双语-3组": {
+            "id": "32C9F35071BC5BC0E063CB0412ACF720",
+            "type": "kzyxk"
+        },
+        "人工智能-01班-英文-1组": {
+            "id": "32C9F35071BE5BC0E063CB0412ACF720",
+            "type": "kzyxk"
+        },
+        "人工智能-01班-英文-2组": {
+            "id": "32C9F35071C05BC0E063CB0412ACF720",
+            "type": "kzyxk"
+        },
+        "人工智能-01班-英文-3组": {
+            "id": "32C9F35071C25BC0E063CB0412ACF720",
+            "type": "kzyxk"
+        },
+        "人工智能-02班-双语-1组": {
+            "id": "32CA1BD4F89B0073E063CA0412AC337E",
+            "type": "kzyxk"
+        },
+        "人工智能-02班-双语-2组": {
+            "id": "32CA1BD4F89D0073E063CA0412AC337E",
+            "type": "kzyxk"
+        },
+        "人工智能-02班-双语-3组": {
+            "id": "32CA1BD4F89F0073E063CA0412AC337E",
+            "type": "kzyxk"
+        },
+        "人工智能-02班-双语-4组": {
+            "id": "32CA0593CB9F0633E063CA0412AC9F4C",
+            "type": "kzyxk"
+        },
+        "面向对象分析与设计-01班-英文-1组": {
+            "id": "32CE40654F3D2CB8E063CA0412AC8749",
+            "type": "kzyxk"
+        },
+        "计算机安全-01班-英文": {
+            "id": "3227BFF96F36658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "创新实践I-01班-双语": {
+            "id": "3227BFF96F32658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "编译原理-01班-双语-1组": {
+            "id": "32DB8F6272CEEDC4E063CB0412AC6683",
+            "type": "kzyxk"
+        },
+        "深度学习-01班-英文-1组": {
+            "id": "32DB9A79CA375D4FE063CA0412ACE0BB",
+            "type": "kzyxk"
+        },
+        "深度学习-01班-英文-2组": {
+            "id": "32DB9A79CA395D4FE063CA0412ACE0BB",
+            "type": "kzyxk"
+        },
+        "深度学习-01班-英文-3组": {
+            "id": "32DB9A79CA3B5D4FE063CA0412ACE0BB",
+            "type": "kzyxk"
+        },
+        "创新实践II-01班-双语": {
+            "id": "3227BFF96F6E658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "分布与云计算-01班-英文": {
+            "id": "32B978C23198C727E063CA0412AC2C1B",
+            "type": "kzyxk"
+        },
+        "计算机操作系统（H）-01班-双语": {
+            "id": "3227BFF96F3F658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "计算机科学与技术前沿讲座 IV-01班-双语": {
+            "id": "3227BFF96F75658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "创新实践III-01班-双语": {
+            "id": "3227BFF96F46658AE063CA0412ACCCEC",
+            "type": "kzyxk"
+        },
+        "高级人工智能-01班-中文-上机地点：三教510-511": {
+            "id": "3277C29F6C8CAD4DE063CB0412AC320D",
+            "type": "kzyxk"
+        },
+        "高级算法设计与分析-01班-英文-上机地点：三教506-507": {
+            "id": "3277C29F6C8EAD4DE063CB0412AC320D",
+            "type": "kzyxk"
+        },
+        "高级计算机网络-01班-英文": {
+            "id": "3277C29F6C90AD4DE063CB0412AC320D",
+            "type": "kzyxk"
+        },
+        "无线网络与移动计算-01班-英文": {
+            "id": "3277C29F6C91AD4DE063CB0412AC320D",
+            "type": "kzyxk"
+        },
+        "信号和系统-01班-双语": {
+            "id": "322796A7E3E995AEE063CB0412AC2A2D",
+            "type": "kzyxk"
+        },
+        "信号和系统-02班-双语": {
+            "id": "32696B62FB84E642E063CA0412AC6652",
+            "type": "kzyxk"
+        },
+        "信号和系统-03班-双语": {
+            "id": "32696B62FB8AE642E063CA0412AC6652",
+            "type": "kzyxk"
+        },
+        "信号和系统-04班-双语": {
+            "id": "32696B62FB90E642E063CA0412AC6652",
+            "type": "kzyxk"
+        },
+        "信号和系统-05班-英文": {
+            "id": "32696B62FB96E642E063CA0412AC6652",
+            "type": "kzyxk"
+        },
+        "数字信号处理-01班-双语": {
+            "id": "322796A7E40495AEE063CB0412AC2A2D",
+            "type": "kzyxk"
+        },
+        "信息论与编码-01班-中文": {
+            "id": "322796A7E41995AEE063CB0412AC2A2D",
+            "type": "kzyxk"
+        },
+        "数值分析-01班-双语": {
+            "id": "32280EDEC85A9D62E063CA0412AC01DF",
+            "type": "kzyxk"
+        },
+        "时间序列分析-01班-双语": {
+            "id": "3227D8DFDEC0A836E063CB0412AC8417",
+            "type": "kzyxk"
+        },
+        "普通生物学实验-01班-双语": {
+            "id": "34876DCBB0372162E063CA0412AC91BD",
+            "type": "zynknjxk"
+        },
+        "普通生物学实验-02班-双语": {
+            "id": "3487CE2A2E2EA01FE063CB0412AC12D9",
+            "type": "zynknjxk"
+        },
+        "普通生物学实验-03班-双语": {
+            "id": "3487D4F92AD27D73E063CA0412AC4900",
+            "type": "zynknjxk"
+        },
+        "普通生物学实验-04班-双语": {
+            "id": "3487D4F92AD87D73E063CA0412AC4900",
+            "type": "zynknjxk"
+        },
+        "生物化学I（生物大分子）-01班-英文": {
+            "id": "32284B64BC72C5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "生物化学I（生物大分子）-02班-双语": {
+            "id": "347514C011FFCBAAE063CA0412AC6B33",
+            "type": "zynknjxk"
+        },
+        "生物化学II（新陈代谢）-01班-双语": {
+            "id": "34876DCBB0392162E063CA0412AC91BD",
+            "type": "zynknjxk"
+        },
+        "微生物学-01班-双语": {
+            "id": "32284B64BC6DC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "微生物学实验-01班-双语": {
+            "id": "32284B64BC6BC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "微生物学实验-02班-双语": {
+            "id": "3487E83A5D7B803BE063CA0412AC191E",
+            "type": "zynknjxk"
+        },
+        "细胞生物学-01班-英文": {
+            "id": "32284B64BC7DC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "植物生理学-01班-双语": {
+            "id": "32284B64BC70C5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "细胞生物学实验-01班-英文": {
+            "id": "32284B64BC80C5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "细胞生物学实验-02班-双语": {
+            "id": "3487F06DF311B3EDE063CB0412AC0B84",
+            "type": "zynknjxk"
+        },
+        "细胞生物学实验-03班-双语": {
+            "id": "3487EC76E04F804BE063CA0412AC76B1",
+            "type": "zynknjxk"
+        },
+        "植物生理学实验-01班-双语": {
+            "id": "32284B64BC77C5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "生物统计学-01班-英文": {
+            "id": "34876DCBB03A2162E063CA0412AC91BD",
+            "type": "zynknjxk"
+        },
+        "生物心理学-01班-双语": {
+            "id": "32284B64BC69C5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "遗传学-01班-英文": {
+            "id": "34876DCBB03B2162E063CA0412AC91BD",
+            "type": "zynknjxk"
+        },
+        "计算生物学-01班-双语": {
+            "id": "32284B64BC79C5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "动物生理学-01班-英文": {
+            "id": "32284B64BC7AC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "动物生理学实验-01班-双语": {
+            "id": "32284B64BC8DC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "分子生物学-01班-英文": {
+            "id": "32284B64BC68C5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "肿瘤生物学-01班-双语": {
+            "id": "32284B64BC7FC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "蛋白质工程-01班-双语": {
+            "id": "32284B64BC7EC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "生物物理学基本原理-01班-双语": {
+            "id": "32284B64BC7BC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "基因工程学-01班-双语": {
+            "id": "32284B64BC7CC5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "免疫学-01班-英文": {
+            "id": "32284B64BC78C5BAE063CA0412AC6731",
+            "type": "zynknjxk"
+        },
+        "RNA生物学及疗法-01班-中文": {
+            "id": "3277C29F6CECAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "电路原理-01班-英文": {
+            "id": "322789FA7F05437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "医用材料与医疗器械-01班-英文": {
+            "id": "322789FA7F09437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "生物医学材料基础-01班-英文": {
+            "id": "322789FA7F01437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "工程力学基础-01班-英文": {
+            "id": "322789FA7F02437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "分子细胞生物学-01班-英文": {
+            "id": "322789FA7F03437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "定量生理学（一）-01班-英文": {
+            "id": "322789FA7F0C437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "定量生理学（一）-02班-英文": {
+            "id": "323BCCDDE1E69ECFE063CA0412AC5394",
+            "type": "zynknjxk"
+        },
+        "医学图像处理-01班-英文": {
+            "id": "322789FA7F0D437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "医学影像系统原理-01班-英文": {
+            "id": "322789FA7F0F437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "生物力学-01班-英文": {
+            "id": "322789FA7F10437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "生物医学工程实验（一）-01班-英文": {
+            "id": "322789FA7F16437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "生物医学工程实验（一）-02班-英文": {
+            "id": "323BC94CD7B3F81AE063CB0412ACF2B7",
+            "type": "zynknjxk"
+        },
+        "生物医学光学实验-01班-双语": {
+            "id": "323B9536B370E950E063CB0412ACED60",
+            "type": "zynknjxk"
+        },
+        "生物医学光学实验-02班-双语": {
+            "id": "323BC94CD7B5F81AE063CB0412ACF2B7",
+            "type": "zynknjxk"
+        },
+        "生物医学工程临床认知Ⅰ-01班-双语": {
+            "id": "32B378EAB36991BFE063CB0412AC3D3E",
+            "type": "zynknjxk"
+        },
+        "智能医学工程综合实验I-01班-英文": {
+            "id": "322789FA7F0E437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "智能医学工程综合实验I-02班-英文": {
+            "id": "323BC94CD7B4F81AE063CB0412ACF2B7",
+            "type": "zynknjxk"
+        },
+        "神经工程与脑机接口-01班-英文": {
+            "id": "322789FA7F12437FE063CA0412AC6431",
+            "type": "zynknjxk"
+        },
+        "化学原理实验-01班-双语": {
+            "id": "35103B1386104691E063CA0412ACCA57",
+            "type": "zynknjxk"
+        },
+        "有机化学 B-01班-双语": {
+            "id": "322BDD9DD391B340E063CA0412AC9C2B",
+            "type": "zynknjxk"
+        },
+        "有机化学I-01班-双语": {
+            "id": "322BDD9DD392B340E063CA0412AC9C2B",
+            "type": "zynknjxk"
+        },
+        "有机化学II-01班-双语": {
+            "id": "322BD05F6B6EB025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "有机化学II-02班-双语": {
+            "id": "340BAB67DE5DAEFAE063CB0412AC82B2",
+            "type": "zynknjxk"
+        },
+        "有机化学实验-01班-双语": {
+            "id": "322BD05F6B6BB025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "有机化学实验-02班-双语": {
+            "id": "340BDB752DEE7A01E063CA0412AC15CC",
+            "type": "zynknjxk"
+        },
+        "无机化学I-01班-双语": {
+            "id": "322BD05F6B68B025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "无机化学II-01班-英文": {
+            "id": "35104397447CC7ADE063CB0412ACF66E",
+            "type": "zynknjxk"
+        },
+        "分析化学I-01班-双语": {
+            "id": "322BD05F6B69B025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "分析化学实验I-01班-双语": {
+            "id": "322BD05F6B67B025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "分析化学实验I-02班-双语": {
+            "id": "340C13775E797D1AE063CA0412AC2239",
+            "type": "zynknjxk"
+        },
+        "分析化学II-01班-英文": {
+            "id": "35103B13860A4691E063CA0412ACCA57",
+            "type": "zynknjxk"
+        },
+        "主族元素化学-01班-双语": {
+            "id": "3510675A146A49EFE063CA0412ACF19D",
+            "type": "zynknjxk"
+        },
+        "物理化学I-01班-双语": {
+            "id": "322BD05F6B70B025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "物理化学II-01班-双语": {
+            "id": "351094533A4C52ACE063CA0412ACE8B8",
+            "type": "zynknjxk"
+        },
+        "物理化学实验-01班-双语": {
+            "id": "322BD05F6B7AB025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "物理化学实验-02班-双语": {
+            "id": "340C33EC65529574E063CA0412AC8CA9",
+            "type": "zynknjxk"
+        },
+        "现代策略合成-01班-双语": {
+            "id": "322BD05F6B77B025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "不对称合成-01班-双语": {
+            "id": "322BD05F6B7FB025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "高分子化学-01班-双语": {
+            "id": "322BD05F6B78B025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "药物化学-01班-中文": {
+            "id": "322BD05F6B75B025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "高等无机化学实验-01班-双语": {
+            "id": "322BD05F6B7CB025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "高分子化学实验-01班-双语": {
+            "id": "322BD05F6B7EB025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "复合材料科学与应用-01班-中文": {
+            "id": "322BD05F6B7DB025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "化工原理-01班-双语": {
+            "id": "322BD05F6B74B025E063CA0412AC83C3",
+            "type": "zynknjxk"
+        },
+        "化学实验安全与环保-01班-中文": {
+            "id": "3277C29F6B11AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "化学实验安全与环保-02班-中文": {
+            "id": "3397EBF4DA12CCF9E063CA0412AC2EBE",
+            "type": "zynknjxk"
+        },
+        "基础汉语 I-01班-英文-仅向留学生开放选课": {
+            "id": "322859B89F98D019E063CA0412ACB93D",
+            "type": "zynknjxk"
+        },
+        "基础汉语 I-02班-英文-仅向留学生开放选课": {
+            "id": "336E81203465E7AEE063CA0412AC9C84",
+            "type": "zynknjxk"
+        },
+        "基础汉语 I-03班-英文-仅向留学生开放选课": {
+            "id": "336E8120346AE7AEE063CA0412AC9C84",
+            "type": "zynknjxk"
+        },
+        "中级汉语I-01班-英文-仅向留学生开放选课": {
+            "id": "32285C2475E2D52BE063CA0412AC75FD",
+            "type": "zynknjxk"
+        },
+        "高级汉语I-01班-英文-仅向留学生开放选课": {
+            "id": "32285E0CFF6BD401E063CA0412AC3675",
+            "type": "zynknjxk"
+        },
+        "中国文化-01班-英文-仅向留学生开放选课": {
+            "id": "3228621F9B1FD676E063CA0412AC31CF",
+            "type": "zynknjxk"
+        },
+        "中国文化-02班-英文-仅向留学生开放选课": {
+            "id": "336E81203475E7AEE063CA0412AC9C84",
+            "type": "zynknjxk"
+        },
+        "计算机科学与技术前沿讲座 III-01班-双语": {
+            "id": "32B97A232779001DE063CB0412ACE812",
+            "type": "zynknjxk"
+        },
+        "智能数据分析-01班-英文": {
+            "id": "34C64CC607CB0300E063CA0412AC4419",
+            "type": "zynknjxk"
+        },
+        "演化计算及其应用-01班-英文": {
+            "id": "34C655364DAB0409E063CA0412ACCA24",
+            "type": "zynknjxk"
+        },
+        "高级分布式系统-01班-英文": {
+            "id": "3277C29F6C93AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "组合优化-01班-中文": {
+            "id": "34C65E8D8AF42B73E063CB0412AC8861",
+            "type": "zynknjxk"
+        },
+        "认知科学基础与前沿-01班-英文": {
+            "id": "34C666B199D52888E063CB0412AC6E61",
+            "type": "zynknjxk"
+        },
+        "设计基础-01班-英文": {
+            "id": "322B3862011E5D86E063CB0412ACFE7E",
+            "type": "zynknjxk"
+        },
+        "增材制造-01班-英文": {
+            "id": "3228AEBD847B0782E063CA0412AC797C",
+            "type": "zynknjxk"
+        },
+        "设计历史-01班-英文": {
+            "id": "3228AF12036F0BCFE063CA0412AC429E",
+            "type": "zynknjxk"
+        },
+        "视觉感知与认知-01班-英文": {
+            "id": "33E28BC86CF24F3CE063CA0412ACA7F0",
+            "type": "zynknjxk"
+        },
+        "交互系统设计-01班-英文": {
+            "id": "33E28BC86CF34F3CE063CA0412ACA7F0",
+            "type": "zynknjxk"
+        },
+        "跨时区协同设计-01班-英文": {
+            "id": "3228B0609D470B21E063CA0412AC6EFE",
+            "type": "zynknjxk"
+        },
+        "游戏调查与评估-01班-英文": {
+            "id": "3228B0609D480B21E063CA0412AC6EFE",
+            "type": "zynknjxk"
+        },
+        "用户体验与交互-01班-英文": {
+            "id": "3228B0609D490B21E063CA0412AC6EFE",
+            "type": "zynknjxk"
+        },
+        "人工智能与设计-01班-英文": {
+            "id": "3228B0609D4A0B21E063CA0412AC6EFE",
+            "type": "zynknjxk"
+        },
+        "叙事与认知-01班-英文": {
+            "id": "3228B0609D4B0B21E063CA0412AC6EFE",
+            "type": "zynknjxk"
+        },
+        "产品用户体验-01班-英文": {
+            "id": "3228B0609D4C0B21E063CA0412AC6EFE",
+            "type": "zynknjxk"
+        },
+        "研究项目-01班-英文": {
+            "id": "322BE69A1508B7E5E063CA0412AC66B6",
+            "type": "zynknjxk"
+        },
+        "设计的研究方法-01班-英文": {
+            "id": "33E271117D2E7C92E063CB0412AC59CA",
+            "type": "zynknjxk"
+        },
+        "经济学-01班-双语": {
+            "id": "31AEDB3939067485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "管理信息系统-01班-英文": {
+            "id": "322C7B134F07B897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "数据分析与数据挖掘-01班-双语": {
+            "id": "33BEBE930497E4DAE063CB0412AC9AEB",
+            "type": "zynknjxk"
+        },
+        "电路基础-01班-英文": {
+            "id": "322796A7E3E795AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "电路基础-02班-双语": {
+            "id": "3240A02869820A6EE063CB0412AC773A",
+            "type": "zynknjxk"
+        },
+        "模拟电路-01班-双语": {
+            "id": "322796A7E3EC95AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "模拟电路-02班-双语": {
+            "id": "32644A00FC3F110BE063CA0412ACAF8E",
+            "type": "zynknjxk"
+        },
+        "模拟电路实验-01班-英文": {
+            "id": "322796A7E3E495AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "模拟电路实验-02班-双语": {
+            "id": "326512AE735CD273E063CB0412AC1C8F",
+            "type": "zynknjxk"
+        },
+        "模拟电路实验-03班-双语": {
+            "id": "32650DEFB4139072E063CA0412ACEC36",
+            "type": "zynknjxk"
+        },
+        "模拟电路实验-04班-双语": {
+            "id": "32650DEFB4189072E063CA0412ACEC36",
+            "type": "zynknjxk"
+        },
+        "数字电路-01班-中文": {
+            "id": "322796A7E40D95AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "数字电路实验-01班-中文": {
+            "id": "322796A7E41095AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "固态电子学-01班-英文": {
+            "id": "322796A7E3E895AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "半导体器件导论-01班-英文": {
+            "id": "323A869D1B44E736E063CA0412ACBEE3",
+            "type": "zynknjxk"
+        },
+        "工程数学-01班-双语": {
+            "id": "322796A7E3E695AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "工程数学-02班-双语": {
+            "id": "3269FB856B8AFF3EE063CB0412ACE634",
+            "type": "zynknjxk"
+        },
+        "工程电磁场理论-01班-双语": {
+            "id": "322796A7E41595AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "机器人感知与智能-01班-双语": {
+            "id": "322796A7E3E595AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "光电子技术基础-01班-双语": {
+            "id": "322796A7E40795AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "半导体光学导论-01班-双语": {
+            "id": "322796A7E40995AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "无线通信-01班-英文-1组": {
+            "id": "32B58D3763E2BE42E063CA0412AC7D7C",
+            "type": "zynknjxk"
+        },
+        "无线通信-01班-英文-2组": {
+            "id": "32B58D3763E4BE42E063CA0412AC7D7C",
+            "type": "zynknjxk"
+        },
+        "数据通信和网络-01班-双语": {
+            "id": "322796A7E40C95AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "微波工程-01班-英文": {
+            "id": "322796A7E41495AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "电子科学创新实验I-01班-中文": {
+            "id": "322796A7E41395AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "电子科学创新实验I-02班-中文": {
+            "id": "3278667EA5A7D30BE063CB0412AC3505",
+            "type": "zynknjxk"
+        },
+        "电子科学创新实验II-01班-双语": {
+            "id": "322796A7E41295AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "液晶光电子学-01班-中文": {
+            "id": "322796A7E40E95AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "传感器与应用-01班-中文": {
+            "id": "322796A7E40F95AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "第三代半导体基础导论-01班-双语": {
+            "id": "322796A7E41795AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "微机原理与微系统-01班-双语-1组": {
+            "id": "32B58D3763DCBE42E063CA0412AC7D7C",
+            "type": "zynknjxk"
+        },
+        "微机原理与微系统-01班-双语-2组": {
+            "id": "32B58D3763DEBE42E063CA0412AC7D7C",
+            "type": "zynknjxk"
+        },
+        "微机原理与微系统-01班-双语-3组": {
+            "id": "32B58D3763E0BE42E063CA0412AC7D7C",
+            "type": "zynknjxk"
+        },
+        "电子信息科学研究实践 I-01班-双语": {
+            "id": "323A8737A96EA726E063CB0412ACF70C",
+            "type": "zynknjxk"
+        },
+        "光学系统设计实验-01班-双语": {
+            "id": "33BEAA0190035632E063CA0412AC3DCC",
+            "type": "zynknjxk"
+        },
+        "电子科学创新实验III-01班-中文": {
+            "id": "322796A7E41C95AEE063CB0412AC2A2D",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-01班-英文": {
+            "id": "335B70046D9059B1E063CA0412ACF8D6",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-02班-双语": {
+            "id": "33690DB11CBE1D79E063CA0412ACEDFF",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-03班-双语": {
+            "id": "336914495D5864D1E063CB0412AC1FAB",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-04班-双语": {
+            "id": "336914495D5D64D1E063CB0412AC1FAB",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-05班-双语": {
+            "id": "336914495D6264D1E063CB0412AC1FAB",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-06班-双语": {
+            "id": "336914495D6764D1E063CB0412AC1FAB",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-07班-双语": {
+            "id": "336914495D6C64D1E063CB0412AC1FAB",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-08班-双语": {
+            "id": "38D9D31FD4811655E063CA0412ACB0C8",
+            "type": "zynknjxk"
+        },
+        "大学地球科学-09班-双语": {
+            "id": "38D9D31FD4861655E063CA0412ACB0C8",
+            "type": "zynknjxk"
+        },
+        "环境学导论-01班-英文": {
+            "id": "324EC63F279E183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "地质学基础-01班-双语": {
+            "id": "324EC63F27A5183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "环境工程原理-01班-中文": {
+            "id": "324EC63F27A2183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "城市规划-01班-中文": {
+            "id": "324EC63F27A3183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "水处理工程-01班-双语": {
+            "id": "324EC63F27AD183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "环境科学与工程实验（一）-01班-中文": {
+            "id": "324EC63F27B0183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "水文学原理与应用-01班-双语": {
+            "id": "324EC63F279F183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "环境微生物实验-01班-中文": {
+            "id": "324EC63F27BD183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "生态学概论-01班-双语": {
+            "id": "324EC63F27AA183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "气象气候学-01班-英文": {
+            "id": "324EC63F27AC183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "地理信息系统与遥感应用-01班-中文": {
+            "id": "324EC63F27A8183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "环境分析化学-01班-双语": {
+            "id": "324EC63F279D183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "污染物运移过程-01班-双语": {
+            "id": "324EC63F27BE183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "数值模拟方法基础-01班-中文": {
+            "id": "324EC63F27BA183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "生态修复-01班-中文": {
+            "id": "324EC63F27AB183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "创新设计课程-01班-中文": {
+            "id": "324EC63F27C2183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "创新设计课程（水资源）-01班-中文": {
+            "id": "324EC63F27C3183FE063CB0412AC1E11",
+            "type": "zynknjxk"
+        },
+        "环境仪器分析-01班-中文": {
+            "id": "3277C29F6B95AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "大气化学-01班-中文": {
+            "id": "3277C29F6BB7AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "地质学原理-01班-双语": {
+            "id": "32276A9E5A8088A7E063CB0412ACBB3C",
+            "type": "zynknjxk"
+        },
+        "基础天文学-01班-双语": {
+            "id": "32B377E2291091D1E063CB0412AC5940",
+            "type": "zynknjxk"
+        },
+        "计算方法（H）-01班-双语": {
+            "id": "33BF38DEB5DCB8CCE063CA0412AC3819",
+            "type": "zynknjxk"
+        },
+        "连续介质力学-01班-双语": {
+            "id": "3227757BDDDD33FCE063CA0412ACAE42",
+            "type": "zynknjxk"
+        },
+        "空间大地测量学概论-01班-双语": {
+            "id": "3227757BDDDE33FCE063CA0412ACAE42",
+            "type": "zynknjxk"
+        },
+        "地球物理实验-01班-双语": {
+            "id": "322776E05EAB35B7E063CA0412AC3FE9",
+            "type": "zynknjxk"
+        },
+        "地震学原理-01班-双语": {
+            "id": "33BF38DEB5DDB8CCE063CA0412AC3819",
+            "type": "zynknjxk"
+        },
+        "灾害风险分析导论-01班-英文": {
+            "id": "32B378EAB36891BFE063CB0412AC3D3E",
+            "type": "zynknjxk"
+        },
+        "空间等离子体物理学-01班-中文": {
+            "id": "32B95FA21A79BB39E063CA0412ACCAB5",
+            "type": "zynknjxk"
+        },
+        "行星地貌学-01班-中文": {
+            "id": "3277C29F6B30AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "金融科技原理-01班-双语": {
+            "id": "31AEDB39390C7485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "商业银行-01班-中文": {
+            "id": "31AEDB3939077485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "微观经济学-01班-双语": {
+            "id": "31AEDB39390E7485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "财务会计-01班-双语": {
+            "id": "31AEDB3939107485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "宏观经济学-01班-双语": {
+            "id": "31AEE6521D161784E063CA0412AC227D",
+            "type": "zynknjxk"
+        },
+        "金融与创业前沿论坛I-01班-双语": {
+            "id": "31AEDB39390F7485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "公司金融-01班-双语": {
+            "id": "31AEDB39392A7485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "财务报表分析-01班-双语": {
+            "id": "31AEE96EFCAE1C82E063CA0412ACC79D",
+            "type": "zynknjxk"
+        },
+        "政治经济学-01班-中文": {
+            "id": "31AEDB3939057485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "金融投资概论-01班-双语": {
+            "id": "31AEDB39393E7485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "计量经济学-01班-双语": {
+            "id": "31AEDB3939407485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "人工智能及金融应用-01班-双语": {
+            "id": "31AEDB3939437485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "金融建模与定价分析-01班-中文": {
+            "id": "31AEDB3939417485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "国际金融-01班-双语": {
+            "id": "31AEDB39394C7485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "公司金融案例分析-01班-中文": {
+            "id": "31AEDB3939447485E063CB0412AC8D56",
+            "type": "zynknjxk"
+        },
+        "金融时间序列分析-01班-英文": {
+            "id": "3277C29F6B9BAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "工业革命、内生经济增长以及科学、产权和金融的作用-01班-英文": {
+            "id": "32DDB0F96899942FE063CA0412AC05CD",
+            "type": "zynknjxk"
+        },
+        "证券投资-01班-双语": {
+            "id": "32280EDEC8569D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "金融风险管理-01班-双语": {
+            "id": "32280EDEC85C9D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "科学研究方法-01班-英文": {
+            "id": "3277C29F6C53AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "系统与工业工程概论-01班-双语": {
+            "id": "33BEBE930499E4DAE063CB0412AC9AEB",
+            "type": "zynknjxk"
+        },
+        "质量控制与管理-01班-双语": {
+            "id": "33BF10DEDE478A81E063CA0412AC78F6",
+            "type": "zynknjxk"
+        },
+        "线性代数精讲-01班-双语": {
+            "id": "3359B9DA30512390E063CB0412ACBE69",
+            "type": "zynknjxk"
+        },
+        "常微分方程B-01班-双语": {
+            "id": "32280EDEC8299D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "数学分析III-01班-中文": {
+            "id": "32280EDEC8339D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "数理统计-01班-双语": {
+            "id": "32280082738EB4FEE063CB0412AC16F5",
+            "type": "zynknjxk"
+        },
+        "数学实验-01班-双语": {
+            "id": "32280EDEC8979D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "初等数论-01班-双语": {
+            "id": "32280EDEC8389D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "概率论与数理统计-01班-双语": {
+            "id": "32280EDEC8249D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "概率论与数理统计-02班-双语": {
+            "id": "33408A3917DBA935E063CB0412ACD089",
+            "type": "zynknjxk"
+        },
+        "概率论与数理统计-03班-双语": {
+            "id": "33408A3917E0A935E063CB0412ACD089",
+            "type": "zynknjxk"
+        },
+        "概率论与数理统计-04班-英文": {
+            "id": "33408A3917E5A935E063CB0412ACD089",
+            "type": "zynknjxk"
+        },
+        "数学分析精讲-01班-双语": {
+            "id": "32280EDEC8349D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "概率论-01班-双语": {
+            "id": "32280EDEC8359D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "概率论-02班-双语": {
+            "id": "33438B607AD827EAE063CA0412AC16DC",
+            "type": "zynknjxk"
+        },
+        "计算金融-01班-英文": {
+            "id": "32280EDEC8609D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "非寿险精算-01班-英文": {
+            "id": "32280EDEC8549D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "数学分析III(H)-01班-中文": {
+            "id": "32280EDEC8329D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "初等数论(H)-01班-英文": {
+            "id": "33F50B7F4BB8C12DE063CA0412ACEED1",
+            "type": "zynknjxk"
+        },
+        "实变函数-01班-双语": {
+            "id": "32280EDEC85D9D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "实变函数-02班-英文": {
+            "id": "334395E2F89F5415E063CB0412AC1642",
+            "type": "zynknjxk"
+        },
+        "偏微分方程-01班-英文": {
+            "id": "32280EDEC8559D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "偏微分方程-02班-双语": {
+            "id": "33439457CDA34706E063CA0412ACF4F3",
+            "type": "zynknjxk"
+        },
+        "代数几何-01班-英文": {
+            "id": "3277C29F6D62AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "统计计算与软件-01班-双语": {
+            "id": "3227D8DFDECCA836E063CB0412AC8417",
+            "type": "zynknjxk"
+        },
+        "群表示论-01班-双语": {
+            "id": "32280EDEC8529D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "统计线性模型-01班-双语": {
+            "id": "3227D8DFDEBEA836E063CB0412AC8417",
+            "type": "zynknjxk"
+        },
+        "偏微分方程(H)-01班-英文": {
+            "id": "3359C5C6014623F7E063CB0412ACAD38",
+            "type": "zynknjxk"
+        },
+        "实变函数(H)-01班-英文": {
+            "id": "3359C40D44244AF5E063CA0412ACF933",
+            "type": "zynknjxk"
+        },
+        "应用与计算拓扑-01班-英文": {
+            "id": "33F50B7F4BB7C12DE063CA0412ACEED1",
+            "type": "zynknjxk"
+        },
+        "动力系统-01班-英文": {
+            "id": "32280EDEC87F9D62E063CA0412AC01DF",
+            "type": "zynknjxk"
+        },
+        "生存分析-01班-双语": {
+            "id": "3227D8DFDEBDA836E063CB0412AC8417",
+            "type": "zynknjxk"
+        },
+        "材料力学-01班-英文": {
+            "id": "32CEC0599DCC58F2E063CB0412AC78CB",
+            "type": "zynknjxk"
+        },
+        "理论力学I-01班-英文": {
+            "id": "323C562F29402317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "理论力学I-B-01班-英文": {
+            "id": "323C562F293C2317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "理论力学I-B-02班-英文": {
+            "id": "32C817BA00EFCAD7E063CB0412ACF552",
+            "type": "zynknjxk"
+        },
+        "工程流体力学-01班-双语": {
+            "id": "323C562F29462317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "工程流体力学-02班-双语": {
+            "id": "32C83CA7A404DF8DE063CA0412AC7211",
+            "type": "zynknjxk"
+        },
+        "工程软件选讲-01班-双语": {
+            "id": "323C562F293E2317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "工程数学基础-01班-双语": {
+            "id": "323C562F29422317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "流体力学-01班-英文": {
+            "id": "323B62126B445C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "工程热力学-01班-双语": {
+            "id": "323C562F293F2317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "航空结构强度-01班-中文": {
+            "id": "323C562F294D2317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "计算固体力学-01班-英文": {
+            "id": "323C562F29532317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "航空热流体实验-01班-双语": {
+            "id": "323C562F29502317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "振动理论-01班-英文": {
+            "id": "323C562F29522317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "固体力学实验-01班-双语": {
+            "id": "323C562F295B2317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "计算流体力学-01班-英文": {
+            "id": "323C562F294A2317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "空气动力学-01班-双语": {
+            "id": "323C562F29512317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "飞行器设计团队实践-01班-双语": {
+            "id": "323C562F29582317E063CB0412ACED90",
+            "type": "zynknjxk"
+        },
+        "航空声学与气动噪声-01班-英文": {
+            "id": "3277C29F6BFCAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "计算统计-01班-双语": {
+            "id": "3227D8DFDEC4A836E063CB0412AC8417",
+            "type": "zynknjxk"
+        },
+        "代数专题-群论-01班-英文": {
+            "id": "3359C81463992582E063CB0412AC1127",
+            "type": "zynknjxk"
+        },
+        "偏微分方程 (上)-01班-英文": {
+            "id": "3277C29F6D5BAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "凸优化算法-01班-英文": {
+            "id": "3277C29F6D69AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "随机过程-01班-英文": {
+            "id": "36A80BE3D7FE9253E063CA0412AC5463",
+            "type": "zynknjxk"
+        },
+        "随机分析及其在金融中的应用-01班-英文": {
+            "id": "3277C29F6D6FAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "概率统计专题-01班-英文": {
+            "id": "3277C29F6B34AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "代数专题II-01班-英文": {
+            "id": "3277C29F6D82AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "抽象代数II-01班-英文": {
+            "id": "3277C29F6D70AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "组合数学-01班-英文": {
+            "id": "33F6AEB3E8560FABE063CB0412AC49AA",
+            "type": "zynknjxk"
+        },
+        "微分流形-01班-英文": {
+            "id": "3277C29F6D7DAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "动力系统引论-01班-英文": {
+            "id": "3277C29F6D72AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "测度论-01班-英文": {
+            "id": "3277C29F6D74AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "科学计算-01班-英文": {
+            "id": "3277C29F6D75AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "应用数学方法-01班-英文": {
+            "id": "3277C29F6D77AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "现代概率论-01班-英文": {
+            "id": "3277C29F6D79AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "高等统计学-01班-英文": {
+            "id": "3277C29F6B36AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "CAD与工程制图-01班-双语-1组": {
+            "id": "337CC611E2C2DAAFE063CA0412AC399C",
+            "type": "zynknjxk"
+        },
+        "CAD与工程制图-01班-双语-2组": {
+            "id": "337CC611E2C3DAAFE063CA0412AC399C",
+            "type": "zynknjxk"
+        },
+        "CAD与工程制图-02班-英文-1组": {
+            "id": "337CC93445B980E6E063CB0412AC70F8",
+            "type": "zynknjxk"
+        },
+        "制造工程认知实践-01班-双语-1组": {
+            "id": "337CE46E38D80943E063CA0412AC4D30",
+            "type": "zynknjxk"
+        },
+        "制造工程认知实践-01班-双语-2组": {
+            "id": "337CE46E38DB0943E063CA0412AC4D30",
+            "type": "zynknjxk"
+        },
+        "材料力学M-01班-双语": {
+            "id": "33BF31544856A425E063CA0412ACB5C2",
+            "type": "zynknjxk"
+        },
+        "机械原理-01班-双语": {
+            "id": "33BF3154485BA425E063CA0412ACB5C2",
+            "type": "zynknjxk"
+        },
+        "热工基础-01班-双语": {
+            "id": "33BF38DEB5A7B8CCE063CA0412AC3819",
+            "type": "zynknjxk"
+        },
+        "机械制造基础-01班-双语": {
+            "id": "324FDC9671A9D676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "控制工程基础-01班-英文-1组": {
+            "id": "337CE46E38DF0943E063CA0412AC4D30",
+            "type": "zynknjxk"
+        },
+        "先进制造实践-01班-双语": {
+            "id": "324FDC967197D676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "机械设计-01班-双语": {
+            "id": "324FDC9671A3D676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "机械原理设计实验-01班-双语": {
+            "id": "324FDC9671ADD676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "机器人驱动系统-01班-双语-1组": {
+            "id": "337D5D53D8A30FB5E063CA0412AC2EA1",
+            "type": "zynknjxk"
+        },
+        "机器人驱动系统-02班-英文": {
+            "id": "337D5D413744A9F6E063CB0412AC671A",
+            "type": "zynknjxk"
+        },
+        "机器人建模与控制-01班-双语": {
+            "id": "324FDC967190D676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "机器人操作系统-01班-双语-1组": {
+            "id": "33CD4493B8EAFA5CE063CB0412ACB9B7",
+            "type": "zynknjxk"
+        },
+        "机电一体化系统-01班-双语-1组": {
+            "id": "33CD4493B8EEFA5CE063CB0412ACB9B7",
+            "type": "zynknjxk"
+        },
+        "工程机器学习基础-01班-双语": {
+            "id": "324FDC96719AD676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "功能软材料3D打印–基础、工程与应用-01班-双语": {
+            "id": "324FDC9671AAD676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "光电与光化学转化原理-01班-双语": {
+            "id": "324FDC9671AED676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "电化学原理-01班-双语": {
+            "id": "324FDC9671B2D676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "能源材料化学-01班-双语": {
+            "id": "324FDC9671B1D676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "科学与伦理-01班-双语": {
+            "id": "324FDC9671B6D676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "创新设计理论与实践-01班-双语-1组": {
+            "id": "337E3E4D9B1C9344E063CA0412AC9908",
+            "type": "zynknjxk"
+        },
+        "增材制造与设计-01班-英文": {
+            "id": "324FDC96719BD676E063CA0412ACC741",
+            "type": "zynknjxk"
+        },
+        "新能源工程综合实验-01班-双语": {
+            "id": "33BF215B4AF2C353E063CA0412AC33CF",
+            "type": "zynknjxk"
+        },
+        "医学英语-01班-英文": {
+            "id": "33BE8184D24ACFB4E063CB0412AC5C3E",
+            "type": "zynknjxk"
+        },
+        "医学有机化学-01班-双语": {
+            "id": "319F1EDEECE5303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "卫生经济学-01班-双语": {
+            "id": "33BE8184D249CFB4E063CB0412AC5C3E",
+            "type": "zynknjxk"
+        },
+        "医院管理学概论-01班-双语": {
+            "id": "319F1EDEECE3303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学微生物学-01班-英文": {
+            "id": "319F1EDEECEA303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学微生物学-02班-英文": {
+            "id": "3607B2264A6AAB8FE063CA0412ACA4A3",
+            "type": "zynknjxk"
+        },
+        "医学生物化学A-01班-双语": {
+            "id": "319F1EDEECF6303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学分子生物学-01班-双语": {
+            "id": "319F1EDEECDF303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学分子生物学-02班-双语": {
+            "id": "339165CE104B2EFEE063CA0412ACBC9C",
+            "type": "zynknjxk"
+        },
+        "医学细胞生物学-01班-双语": {
+            "id": "319F1EDEECED303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学细胞生物学-02班-双语": {
+            "id": "3391655F259F217FE063CA0412ACDC15",
+            "type": "zynknjxk"
+        },
+        "生物医学基础实验-02班-英文": {
+            "id": "3391655F259E217FE063CA0412ACDC15",
+            "type": "zynknjxk"
+        },
+        "人体解剖学Ⅰ-01班-双语": {
+            "id": "319F1EDEECEE303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "神经解剖学-01班-双语": {
+            "id": "33BF14297A3994B8E063CA0412ACC543",
+            "type": "zynknjxk"
+        },
+        "生理学-01班-双语": {
+            "id": "319F1EDEECE8303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "病理生理学-01班-双语": {
+            "id": "319F1EDEED40303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学微生物实验-01班-英文": {
+            "id": "319F1EDEECEF303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "循证医学研究方法与临床试验-01班-双语": {
+            "id": "319F1EDEECF1303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "现代分子生物学-01班-双语": {
+            "id": "319F1EDEECE2303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "分子微生物学-01班-双语": {
+            "id": "319F1EDEECE0303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "现代病毒学入门-01班-双语": {
+            "id": "319F1EDEECE4303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "现代疫苗学-01班-双语": {
+            "id": "319F1EDEECE1303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "再生医学：创面修复-01班-双语": {
+            "id": "319F1EDEECF0303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "精神心理疾病流行病学基础-01班-双语": {
+            "id": "32CD4D38426D2DA2E063CB0412AC49F5",
+            "type": "zynknjxk"
+        },
+        "口腔医学导论-01班-双语": {
+            "id": "37E3F0C28B7D1A5DE063CA0412ACAFD8",
+            "type": "zynknjxk"
+        },
+        "生物医学伦理学-01班-英文": {
+            "id": "33BE4CC640BDD6C1E063CB0412ACCD86",
+            "type": "zynknjxk"
+        },
+        "生理学与病理生理学 I-01班-双语": {
+            "id": "319F1EDEECF7303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "组织学与胚胎学-01班-双语": {
+            "id": "319F1EDEECEC303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学神经生物学-01班-双语": {
+            "id": "319F1EDEED18303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "流行病学与预防医学-01班-双语": {
+            "id": "33BF215B4AF0C353E063CA0412AC33CF",
+            "type": "zynknjxk"
+        },
+        "医学心理学-01班-双语": {
+            "id": "319F1EDEED2D303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学人工智能导论-01班-双语": {
+            "id": "319F1EDEED3B303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "肿瘤生物学原理-01班-英文": {
+            "id": "319F1EDEED07303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "人体机能与药理学实验-01班-双语": {
+            "id": "319F1EDEED08303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "人体机能与药理学实验-02班-双语": {
+            "id": "33916C60E0162EFCE063CA0412AC6B34",
+            "type": "zynknjxk"
+        },
+        "药理学A-01班-双语": {
+            "id": "319F1EDEED41303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学遗传学-01班-双语": {
+            "id": "319F1EDEED33303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学免疫学-01班-双语": {
+            "id": "319F1EDEED0B303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "医学免疫学-02班-双语": {
+            "id": "33F6EA4571122441E063CB0412AC6582",
+            "type": "zynknjxk"
+        },
+        "医学人文及职业素养-01班-双语": {
+            "id": "319F1EDEED26303CE063CB0412AC4714",
+            "type": "zynknjxk"
+        },
+        "实验室安全通识基础-01班-中文": {
+            "id": "3277C29F6C8AAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "微加工与微系统-01班-英文": {
+            "id": "3277C29F6C4AAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "微观组织表征与分析-01班-英文": {
+            "id": "3277C29F6C3DAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "功能软材料与4D打印-01班-英文": {
+            "id": "3277C29F6C50AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "新能源技术：氢能与燃料电池技术-01班-中文": {
+            "id": "3277C29F6C42AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "锂离子电池技术-01班-中文": {
+            "id": "3277C29F6C5FAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "营销学-01班-双语": {
+            "id": "322C7B134F46B897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "运筹与决策分析-01班-英文": {
+            "id": "322C7B134F12B897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "社交网络及数字营销-01班-英文": {
+            "id": "322C7B134F29B897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "大数据生态与存储计算-01班-双语": {
+            "id": "33BF14297A3394B8E063CA0412ACC543",
+            "type": "zynknjxk"
+        },
+        "大数据管理与ERP-01班-英文": {
+            "id": "322C7B134F2CB897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "大数据治理与商业模式-01班-双语": {
+            "id": "322C7B134F39B897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "社交网络模型及应用-01班-双语": {
+            "id": "36009E39D5FB9163E063CA0412AC9D4B",
+            "type": "zynknjxk"
+        },
+        "创业思维和管理-01班-双语": {
+            "id": "322C7B134F35B897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "消费者行为学-01班-英文": {
+            "id": "322C7B134F03B897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "生产运作数据建模与分析-01班-双语": {
+            "id": "322C7B134F47B897E063CB0412AC296D",
+            "type": "zynknjxk"
+        },
+        "材料科学与工程基础-01班-英文": {
+            "id": "323C470D78FEF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "材料科学与工程基础-02班-英文": {
+            "id": "33466E3A14411096E063CB0412ACAEA6",
+            "type": "zynknjxk"
+        },
+        "材料科学与工程基础-03班-英文": {
+            "id": "33466E3A14461096E063CB0412ACAEA6",
+            "type": "zynknjxk"
+        },
+        "材料科学与工程基础实验-01班-双语": {
+            "id": "323C470D7902F5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "材料科学与工程基础实验-02班-英文": {
+            "id": "33F72571A9BA324BE063CA0412ACAD72",
+            "type": "zynknjxk"
+        },
+        "奇幻材料-01班-双语": {
+            "id": "323C470D7904F5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "奇幻材料-02班-英文": {
+            "id": "33F74C8EDCC93D81E063CA0412AC3383",
+            "type": "zynknjxk"
+        },
+        "晶体学-01班-双语": {
+            "id": "323C470D78FDF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "晶体学-02班-英文": {
+            "id": "33467A0FD9BFC612E063CA0412ACF282",
+            "type": "zynknjxk"
+        },
+        "工程电路与电子基础-01班-双语": {
+            "id": "323C470D78FBF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "工程数学物理方法-01班-双语": {
+            "id": "323C470D78FAF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "材料化学-01班-双语": {
+            "id": "323C470D790EF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "材料化学-02班-双语": {
+            "id": "33468B2D1031C46EE063CA0412ACA3C1",
+            "type": "zynknjxk"
+        },
+        "材料学综合实验I-01班-双语": {
+            "id": "323C470D7918F5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "材料学综合实验I-02班-英文": {
+            "id": "33F765DB576B4F8BE063CB0412ACC2FE",
+            "type": "zynknjxk"
+        },
+        "陶瓷材料-01班-英文": {
+            "id": "323C470D7912F5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "金属材料A-01班-英文": {
+            "id": "323C470D7913F5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "有机功能材料-01班-双语": {
+            "id": "323C470D790CF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "电化学基础-01班-英文": {
+            "id": "323C470D7914F5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "光电信息材料与器件综合实验I-01班-英文": {
+            "id": "323C470D7911F5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "应用固体物理-01班-双语": {
+            "id": "323C470D790FF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "材料科学与工程高等实验I-01班-双语": {
+            "id": "323C470D791FF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "材料科学与工程高等实验I-02班-英文": {
+            "id": "33F754AC781118F3E063CA0412ACA8D0",
+            "type": "zynknjxk"
+        },
+        "电子信息材料与器件-01班-英文": {
+            "id": "323C470D790AF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "材料有限元基础与AI设计-01班-双语": {
+            "id": "3500C86F35095685E063CA0412AC89A0",
+            "type": "zynknjxk"
+        },
+        "先进薄膜制备技术-01班-英文": {
+            "id": "323C470D790DF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "封装材料与技术-01班-双语": {
+            "id": "323C470D7907F5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "3D打印及激光先进制造-01班-英文": {
+            "id": "323C470D790BF5A5E063CA0412ACCE94",
+            "type": "zynknjxk"
+        },
+        "电解质基础-01班-英文": {
+            "id": "3277C29F6B6CAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "先进光源导论-01班-英文": {
+            "id": "3277C29F6B74AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "能源材料原理-01班-英文": {
+            "id": "3277C29F6B7CAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "信息存储材料与器件-01班-中文": {
+            "id": "3277C29F6B5CAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "先进电子显微学方法及其应用-01班-中文": {
+            "id": "34ABE528E075B519E063CA0412AC497A",
+            "type": "zynknjxk"
+        },
+        "海滨地貌原理-01班-双语": {
+            "id": "31AE0C3B2299950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "海洋环境生物学实验-01班-中文": {
+            "id": "31AE0C3B229C950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "工程数学与数值计算-01班-双语": {
+            "id": "31AE0C3B229B950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "工程力学-01班-英文": {
+            "id": "31AE0C3B229A950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "海洋环境与灾害-01班-中文": {
+            "id": "34AC84C4B7B09FDEE063CB0412AC6C56",
+            "type": "zynknjxk"
+        },
+        "大气科学导论-01班-双语": {
+            "id": "31AE0C3B22AC950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "海洋地质学-01班-双语": {
+            "id": "32CD7C107DEA37F8E063CB0412AC33D0",
+            "type": "zynknjxk"
+        },
+        "化学海洋学-01班-双语": {
+            "id": "32CD7C777671B82FE063CA0412ACC40A",
+            "type": "zynknjxk"
+        },
+        "海洋分子生物学实验-01班-中文": {
+            "id": "31AE0C3B22AD950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "结构分析-01班-双语": {
+            "id": "34AC85AB8E2E178FE063CA0412ACFE6A",
+            "type": "zynknjxk"
+        },
+        "土力学实验-01班-双语": {
+            "id": "31AE0C3B2296950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "地球科学多维数据分析-01班-双语": {
+            "id": "31AE0C3B229F950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "海洋工程规划与设计-01班-双语": {
+            "id": "34AC82BC5AA314E1E063CA0412AC76EA",
+            "type": "zynknjxk"
+        },
+        "工程管理与智能建造-01班-双语": {
+            "id": "34AC839DE2D315FCE063CA0412AC9D42",
+            "type": "zynknjxk"
+        },
+        "海洋地球物理学-01班-中文": {
+            "id": "31AE0C3B22AB950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "生物同位素科学-01班-双语": {
+            "id": "31AE0C3B22A4950FE063CA0412ACA056",
+            "type": "zynknjxk"
+        },
+        "综合物理实验-01班-双语": {
+            "id": "323B62126B215C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "综合物理实验-02班-双语": {
+            "id": "33416A440483E912E063CB0412AC84C5",
+            "type": "zynknjxk"
+        },
+        "数学物理方法-01班-双语": {
+            "id": "323B62126B1F5C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "热力学与统计物理I-01班-双语": {
+            "id": "323B678C379DE157E063CB0412AC1ED5",
+            "type": "zynknjxk"
+        },
+        "分析力学-01班-双语": {
+            "id": "323B62126B3A5C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "量子力学I-01班-双语": {
+            "id": "32CD3DAF7ED893D4E063CA0412ACBFCF",
+            "type": "zynknjxk"
+        },
+        "电动力学I-01班-双语": {
+            "id": "323B62126B235C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "原子物理学-01班-双语": {
+            "id": "32CD3DAF7EDA93D4E063CA0412ACBFCF",
+            "type": "zynknjxk"
+        },
+        "数学物理方法（H）-01班-双语": {
+            "id": "32CD3DAF7ED993D4E063CA0412ACBFCF",
+            "type": "zynknjxk"
+        },
+        "综合物理开放实验-01班-双语": {
+            "id": "323B62126B225C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "综合物理实验（H）-01班-双语": {
+            "id": "34AA12369B1CD4CAE063CA0412AC5630",
+            "type": "zynknjxk"
+        },
+        "研究型物理实验-01班-双语": {
+            "id": "323B62126B465C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "统计物理II-01班-双语": {
+            "id": "323B62126B3E5C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "量子力学II-01班-双语": {
+            "id": "323B62126B3F5C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "近代光学-01班-双语": {
+            "id": "323B62126B415C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "固体物理-01班-双语": {
+            "id": "323B62126B455C4BE063CA0412AC639B",
+            "type": "zynknjxk"
+        },
+        "亚原子物理前沿及交叉-01班-双语": {
+            "id": "34AA14E962D82EB0E063CB0412AC8CA6",
+            "type": "zynknjxk"
+        },
+        "高等量子力学-01班-英文": {
+            "id": "3277C29F6D95AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "高等统计物理-01班-英文": {
+            "id": "3277C29F6D8BAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "密度泛函方法和固态电子结构-01班-中文": {
+            "id": "3277C29F6D87AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "薄膜物理-01班-英文": {
+            "id": "3277C29F6D8DAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "物理学中的群论-01班-中文": {
+            "id": "3277C29F6AF1AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "量子信息-01班-英文": {
+            "id": "37C0FA95DC1A2FC0E063CB0412AC846E",
+            "type": "zynknjxk"
+        },
+        "先进电子显微学-01班-英文": {
+            "id": "3277C29F6AF3AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "量子场论导论-01班-英文": {
+            "id": "3277C29F6D91AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "微纳结构加工-01班-中文": {
+            "id": "3277C29F6D93AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "信息光学-01班-中文": {
+            "id": "3277C29F6AF7AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "非线性光学原理-01班-英文": {
+            "id": "3277C29F6AF9AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "生物物理学-01班-中文": {
+            "id": "3277C29F6AFBAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "超导物理I-01班-英文": {
+            "id": "3277C29F6D85AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "工业设计史-01班-英文": {
+            "id": "322C1D526504DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "工业设计基础-01班-英文": {
+            "id": "322C1D526507DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "计算机辅助设计建模-01班-双语": {
+            "id": "322C1D526503DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "设计心理学与美学-01班-双语": {
+            "id": "322C1D526505DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "系统工程基础-01班-双语": {
+            "id": "322C1D526506DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "控制工程数学基础-01班-双语": {
+            "id": "322C1D526501DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "电子技术基础-01班-双语": {
+            "id": "322C1D5264FFDFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "信号与线性系统分析-01班-双语": {
+            "id": "322C1D5264FDDFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "C/C++程序设计基础-01班-双语": {
+            "id": "322C1D5264FEDFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "人工智能与机器学习-01班-双语": {
+            "id": "322C1D526500DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "设计力学-01班-双语": {
+            "id": "322C1D526508DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "智能控制科学创新实践II-01班-双语": {
+            "id": "322C1D526516DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "智能制造与设计-01班-双语": {
+            "id": "322C1D526515DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "产品质量管理-01班-双语": {
+            "id": "34E72241316A99E1E063CA0412AC2DC1",
+            "type": "zynknjxk"
+        },
+        "工业互联网及应用-01班-双语": {
+            "id": "322C1D526517DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "微机原理与嵌入式系统-01班-双语": {
+            "id": "34E72241316799E1E063CA0412AC2DC1",
+            "type": "zynknjxk"
+        },
+        "现代控制理论及应用-01班-双语": {
+            "id": "322C1D52650BDFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "凸优化及其在机器学习中的应用-01班-双语": {
+            "id": "322C1D52651FDFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "大数据-01班-双语": {
+            "id": "322C1D526510DFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "工业设计职业实践-01班-英文": {
+            "id": "322C1D52651ADFA4E063CA0412ACC815",
+            "type": "zynknjxk"
+        },
+        "系统辨识与自适应控制-01班-中文": {
+            "id": "3277C29F6CAFAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "工程优化方法-01班-中文": {
+            "id": "3277C29F6CABAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "高级机器人控制-01班-英文": {
+            "id": "3277C29F6CA3AD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "电路基础-01班-双语": {
+            "id": "32B7EB2717BED983E063CA0412AC1D55",
+            "type": "zynknjxk"
+        },
+        "电磁场与电磁波-01班-双语": {
+            "id": "32277FCA9E833954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "信号与系统-01班-英文": {
+            "id": "32277FCA9E813954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "信号与系统-02班-双语": {
+            "id": "32B4C28B4934DCD0E063CB0412ACDA86",
+            "type": "zynknjxk"
+        },
+        "模拟集成电路-01班-双语-1组": {
+            "id": "32B860CD7BFF1112E063CA0412AC6732",
+            "type": "zynknjxk"
+        },
+        "模拟集成电路-01班-双语-2组": {
+            "id": "32B860CD7C011112E063CA0412AC6732",
+            "type": "zynknjxk"
+        },
+        "模拟集成电路-01班-双语-3组": {
+            "id": "32B860CD7C031112E063CA0412AC6732",
+            "type": "zynknjxk"
+        },
+        "数字集成电路-01班-双语-1组": {
+            "id": "32B86A994C8F365AE063CA0412ACA37C",
+            "type": "zynknjxk"
+        },
+        "数字集成电路-01班-双语-2组": {
+            "id": "32B86A994C91365AE063CA0412ACA37C",
+            "type": "zynknjxk"
+        },
+        "数字集成电路-01班-双语-3组": {
+            "id": "32B86A994C93365AE063CA0412ACA37C",
+            "type": "zynknjxk"
+        },
+        "半导体材料物理-01班-双语": {
+            "id": "32277FCA9E863954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "半导体材料物理-02班-双语": {
+            "id": "32B86A994C9A365AE063CA0412ACA37C",
+            "type": "zynknjxk"
+        },
+        "半导体器件物理-01班-双语-1组": {
+            "id": "32C867BE8B06E1FCE063CB0412AC91FF",
+            "type": "zynknjxk"
+        },
+        "微电子前沿讲座I-01班-双语": {
+            "id": "32277FCA9E843954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "微电子学创新实验I-01班-双语": {
+            "id": "32277FCA9E823954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "超大规模集成电路工艺原理-01班-双语-1组": {
+            "id": "32C87F04FC8CF880E063CA0412AC4D2E",
+            "type": "zynknjxk"
+        },
+        "超大规模集成电路工艺原理-02班-双语-1组": {
+            "id": "32C872EE5F9FF0ADE063CA0412AC502E",
+            "type": "zynknjxk"
+        },
+        "CMOS模拟集成电路设计-01班-双语-1组": {
+            "id": "32B9329925C48E60E063CA0412ACAC8F",
+            "type": "zynknjxk"
+        },
+        "CMOS模拟集成电路设计-01班-双语-2组": {
+            "id": "32B9329925C68E60E063CA0412ACAC8F",
+            "type": "zynknjxk"
+        },
+        "先进半导体工艺实践-01班-双语-1组": {
+            "id": "32B938DC0F5A9531E063CA0412AC4861",
+            "type": "zynknjxk"
+        },
+        "先进半导体工艺实践-01班-双语-2组": {
+            "id": "32B938DC0F5C9531E063CA0412AC4861",
+            "type": "zynknjxk"
+        },
+        "微型计算机处理器设计-01班-双语-1组": {
+            "id": "32B940EA5BB9B331E063CA0412AC8A61",
+            "type": "zynknjxk"
+        },
+        "微型计算机处理器设计-01班-双语-2组": {
+            "id": "32B940EA5BBBB331E063CA0412AC8A61",
+            "type": "zynknjxk"
+        },
+        "微型计算机处理器设计-01班-双语-3组": {
+            "id": "32B940EA5BBCB331E063CA0412AC8A61",
+            "type": "zynknjxk"
+        },
+        "集成电路版图设计基础-01班-双语": {
+            "id": "32277FCA9E973954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "微纳传感器设计-01班-双语": {
+            "id": "32277FCA9E8F3954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "片上系统集成电路设计-01班-双语": {
+            "id": "32277FCA9E923954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "半导体器件及封装基础-01班-双语": {
+            "id": "32B7E4D1F695D930E063CA0412ACE988",
+            "type": "zynknjxk"
+        },
+        "氮化镓半导体材料与器件导论-01班-双语": {
+            "id": "32277FCA9E913954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "微电子前沿讲座III-01班-双语": {
+            "id": "32277FCA9E8C3954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "微电子学创新实验III-01班-双语": {
+            "id": "32277FCA9E883954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "高级微纳光学-01班-英文": {
+            "id": "3277C29F6CDAAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "高阶微波电路与系统设计-01班-英文": {
+            "id": "3277C29F6CDEAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "科学与工程类专利基础-01班-双语": {
+            "id": "32277FCA9E7F3954E063CA0412ACBECC",
+            "type": "zynknjxk"
+        },
+        "概率论基础-01班-双语": {
+            "id": "3227D8DFDEB6A836E063CB0412AC8417",
+            "type": "zynknjxk"
+        },
+        "离散数学及其应用-01班-双语": {
+            "id": "32CD0263E2E96F4EE063CA0412ACE735",
+            "type": "zynknjxk"
+        },
+        "数据科学导论-01班-双语-1组": {
+            "id": "348726A504301ADFE063CA0412ACF14A",
+            "type": "zynknjxk"
+        },
+        "数据科学导论-01班-双语-2组": {
+            "id": "348726A504331ADFE063CA0412ACF14A",
+            "type": "zynknjxk"
+        },
+        "人工智能B-01班-双语-1组": {
+            "id": "32CD8F7110F0C898E063CA0412AC471D",
+            "type": "zynknjxk"
+        },
+        "人工智能B-01班-双语-2组": {
+            "id": "32CD8F7110F2C898E063CA0412AC471D",
+            "type": "zynknjxk"
+        },
+        "分布式存储与并行计算-01班-双语-1组": {
+            "id": "32CD7B74A77DB767E063CA0412AC722C",
+            "type": "zynknjxk"
+        },
+        "分布式存储与并行计算-01班-双语-2组": {
+            "id": "32CD7B74A77FB767E063CA0412AC722C",
+            "type": "zynknjxk"
+        },
+        "广义线性模型-01班-双语": {
+            "id": "3227D8DFDEC3A836E063CB0412AC8417",
+            "type": "zynknjxk"
+        },
+        "高级自然语言处理-01班-中文": {
+            "id": "3277C29F6B3CAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        },
+        "统计前沿选讲II-01班-中文": {
+            "id": "32F0979192DEF3D9E063CA0412AC23D0",
+            "type": "zynknjxk"
+        },
+        "统计前沿选讲III-01班-英文": {
+            "id": "3277C29F6B3AAD4DE063CB0412AC320D",
+            "type": "zynknjxk"
+        }
+    }
+}
