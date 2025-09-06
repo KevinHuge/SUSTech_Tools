@@ -15,10 +15,14 @@ import sys
 import os
 import json
 import re
+import random
+import math
+from datetime import datetime, timedelta
 import time
 import asyncio
 import threading
 from getpass import getpass
+import schedule
 
 import requests
 import aiohttp
@@ -26,11 +30,15 @@ from colorama import init, Fore, Style
 
 # --- 全局配置 ---
 # 模式2 (激进模式) 的核心性能参数
-AGGRESSIVE_CONCURRENCY = 25  # 并发请求数 (建议 15-50)
-AGGRESSIVE_TIMEOUT = 2.0      # 请求超时 (秒)
+AGGRESSIVE_CONCURRENCY = 50  # 并发请求数 (建议 30-100)
+AGGRESSIVE_TIMEOUT = 1.5      # 请求超时 (秒)
+AGGRESSIVE_MAX_RETRIES = 3    # 最大重试次数
+AGGRESSIVE_BACKOFF = 0.1      # 退避时间
 
 # 模式1 (安全模式) 的核心性能参数
-SAFE_INTERVAL = 2           # 轮询间隔 (秒)
+SAFE_INTERVAL = 1.0         # 轮询间隔 (秒) - 从2秒改为1秒
+SAFE_MAX_BURST = 3          # 安全模式的突发请求数
+SAFE_BURST_INTERVAL = 0.3   # 突发请求间隔 (秒)
 
 # --- 通用常量 ---
 CLASS_CACHE_PATH = "class.txt"
@@ -128,12 +136,19 @@ def fetch_all_courses_sync(session, semester_data):
         print(SUCCESS + f"课程信息已缓存至 '{COURSE_INFO_PATH}'。")
         
     return all_courses_info
-def attempt_register_sync(session, course_data, semester_data):
-    """同步的选课尝试函数。"""
+def attempt_register_sync(session, course_data, semester_data, retry_count=0):
+    """同步的选课尝试函数 - 优化版。"""
     c_id, c_type, c_name = course_data
     payload = {"p_xktjz": "rwtjzyx", "p_xnxq": semester_data['p_xnxq'], "p_xkfsdm": c_type, "p_id": c_id}
+    
+    # 添加随机延迟防止检测
+    if retry_count > 0:
+        delay = random.uniform(0.1, 0.5) * retry_count
+        time.sleep(delay)
+    
     try:
-        response = session.post(f"{TIS_BASE_URL}/Xsxk/addGouwuche", data=payload, timeout=5)
+        # 降低超时时间提高响应速度
+        response = session.post(f"{TIS_BASE_URL}/Xsxk/addGouwuche", data=payload, timeout=3)
         result = response.json()
         message = result.get('message', '无返回信息')
         timestamp = time.strftime('%H:%M:%S')
@@ -152,9 +167,9 @@ def attempt_register_sync(session, course_data, semester_data):
         return False
 
 def run_mode_safe(session, course_list, semester_data):
-    """模式1：安全稳定模式的运行逻辑。"""
+    """模式1：安全稳定模式的运行逻辑 - 优化版。"""
     print("\n" + "="*20 + " 模式1：安全稳定模式 " + "="*20)
-    print(INFO + f"将以 {SAFE_INTERVAL} 秒的间隔轮询所有课程。按 Ctrl+C 退出。")
+    print(INFO + f"将以 {SAFE_INTERVAL} 秒的间隔轮询所有课程，突发模式可发送 {SAFE_MAX_BURST} 个连续请求。按 Ctrl+C 退出。")
     
     while not stop_event.is_set():
         with course_list_lock:
@@ -165,10 +180,24 @@ def run_mode_safe(session, course_list, semester_data):
         
         courses_to_remove = []
         for course in targets:
-            if stop_event.is_set(): break
-            if attempt_register_sync(session, course, semester_data):
+            if stop_event.is_set(): 
+                break
+                
+            # 突发模式 - 对每个课程连续尝试多次
+            success = False
+            for burst_attempt in range(SAFE_MAX_BURST):
+                if attempt_register_sync(session, course, semester_data, burst_attempt):
+                    success = True
+                    break
+                if burst_attempt < SAFE_MAX_BURST - 1:  # 不是最后一次尝试
+                    time.sleep(SAFE_BURST_INTERVAL)
+            
+            if success:
                 courses_to_remove.append(course)
-            time.sleep(SAFE_INTERVAL)
+            
+            # 主要间隔时间
+            if not stop_event.is_set():
+                time.sleep(SAFE_INTERVAL)
         
         if courses_to_remove:
             with course_list_lock:
@@ -181,17 +210,27 @@ def run_mode_safe(session, course_list, semester_data):
 # ==============================================================================
 
 async def cas_login_async(sid, pwd):
-    """使用 aiohttp (异步) 进行登录并返回一个已认证的 session。"""
+    """使用 aiohttp (异步) 进行登录并返回一个已认证的 session - 优化版。"""
     print(INFO + "正在为激进模式初始化异步会话...")
-    timeout = aiohttp.ClientTimeout(total=AGGRESSIVE_TIMEOUT)
-    session = aiohttp.ClientSession(headers={"User-Agent": USER_AGENT}, timeout=timeout)
+    timeout = aiohttp.ClientTimeout(total=AGGRESSIVE_TIMEOUT, connect=1.0)
+    connector = aiohttp.TCPConnector(
+        limit=100,  # 提高连接池大小
+        limit_per_host=50,
+        keepalive_timeout=30,
+        enable_cleanup_closed=True
+    )
+    session = aiohttp.ClientSession(
+        headers={"User-Agent": USER_AGENT}, 
+        timeout=timeout,
+        connector=connector
+    )
     
-    # 此处省略了详细的输出，因为用户已在同步模式下登录过一次
     try:
         async with session.get(CAS_LOGIN_URL, ssl=False) as response:
             text = await response.text()
             execution_match = re.search(r'name="execution" value="([^"]+)"', text)
-            if not execution_match: return None
+            if not execution_match: 
+                return None
             
             payload = {'username': sid, 'password': pwd, 'execution': execution_match.group(1),
                        '_eventId': 'submit', 'geolocation': ''}
@@ -202,42 +241,85 @@ async def cas_login_async(sid, pwd):
                     print(SUCCESS + "异步会话认证成功！")
                     return session
                 return None
-    except Exception:
+    except Exception as e:
+        print(ERROR + f"异步登录失败: {e}")
+        await session.close()
         return None
 
-async def attempt_register_async(session, course_data, semester_data, worker_id):
-    """异步的选课尝试函数。"""
+async def attempt_register_async(session, course_data, semester_data, worker_id, semaphore):
+    """异步的选课尝试函数 - 优化版。"""
     c_id, c_type, c_name = course_data
     payload = {"p_xktjz": "rwtjzyx", "p_xnxq": semester_data['p_xnxq'], "p_xkfsdm": c_type, "p_id": c_id}
-    try:
-        async with session.post(f"{TIS_BASE_URL}/Xsxk/addGouwuche", data=payload, ssl=False) as response:
-            result = await response.json(content_type=None)
-            message = result.get('message', '')
-            ts = time.strftime('%H:%M:%S')
+    
+    async with semaphore:  # 限制并发数
+        retry_count = 0
+        while retry_count < AGGRESSIVE_MAX_RETRIES:
+            try:
+                # 添加微小的随机延迟以避免同时请求
+                if retry_count > 0:
+                    await asyncio.sleep(random.uniform(0.05, 0.2))
+                
+                async with session.post(f"{TIS_BASE_URL}/Xsxk/addGouwuche", data=payload, ssl=False) as response:
+                    result = await response.json(content_type=None)
+                    message = result.get('message', '')
+                    ts = time.strftime('%H:%M:%S')
 
-            if "成功" in message:
-                print(f"{Fore.GREEN}{Style.BRIGHT}[{ts}][W-{worker_id:02d}] {c_name} - 选课成功！{Style.RESET_ALL}")
-                return 'SUCCESS'
-            elif any(k in message for k in ["冲突", "已选", "已满", "不满足", "超学分"]):
-                print(f"{Fore.YELLOW}[{ts}][W-{worker_id:02d}] {c_name} - {message} (永久失败){Style.RESET_ALL}")
-                return 'PERM_FAIL'
-            else:
-                print(f"{Fore.CYAN}[{ts}][W-{worker_id:02d}] {c_name} - {message} (继续){Style.RESET_ALL}")
-                return 'TEMP_FAIL'
-    except Exception:
+                    if "成功" in message:
+                        print(f"{Fore.GREEN}{Style.BRIGHT}[{ts}][W-{worker_id:02d}] {c_name} - 选课成功！{Style.RESET_ALL}")
+                        return 'SUCCESS'
+                    elif any(k in message for k in ["冲突", "已选", "已满", "不满足", "超学分"]):
+                        print(f"{Fore.YELLOW}[{ts}][W-{worker_id:02d}] {c_name} - {message} (永久失败){Style.RESET_ALL}")
+                        return 'PERM_FAIL'
+                    else:
+                        print(f"{Fore.CYAN}[{ts}][W-{worker_id:02d}] {c_name} - {message} (继续){Style.RESET_ALL}")
+                        retry_count += 1
+                        if retry_count < AGGRESSIVE_MAX_RETRIES:
+                            await asyncio.sleep(AGGRESSIVE_BACKOFF * retry_count)
+                        continue
+                        
+            except asyncio.TimeoutError:
+                retry_count += 1
+                print(f"{Fore.RED}[{time.strftime('%H:%M:%S')}][W-{worker_id:02d}] {c_name} - 超时，重试 {retry_count}/{AGGRESSIVE_MAX_RETRIES}{Style.RESET_ALL}")
+                if retry_count < AGGRESSIVE_MAX_RETRIES:
+                    await asyncio.sleep(AGGRESSIVE_BACKOFF * retry_count)
+            except Exception as e:
+                retry_count += 1
+                print(f"{Fore.RED}[{time.strftime('%H:%M:%S')}][W-{worker_id:02d}] {c_name} - 异常: {e}, 重试 {retry_count}/{AGGRESSIVE_MAX_RETRIES}{Style.RESET_ALL}")
+                if retry_count < AGGRESSIVE_MAX_RETRIES:
+                    await asyncio.sleep(AGGRESSIVE_BACKOFF * retry_count)
+        
         return 'TEMP_FAIL'
 
-async def worker_async(worker_id, session, semester_data, queue):
-    """异步模式的工人。"""
+async def worker_async(worker_id, session, semester_data, queue, semaphore, stats):
+    """异步模式的工人 - 优化版。"""
     while True:
-        course_data = await queue.get()
-        status = await attempt_register_async(session, course_data, semester_data, worker_id)
-        if status == 'TEMP_FAIL':
-            await queue.put(course_data) # 放回队列继续尝试
+        try:
+            course_data = await asyncio.wait_for(queue.get(), timeout=1.0)
+        except asyncio.TimeoutError:
+            # 没有更多任务，继续等待
+            continue
+        
+        status = await attempt_register_async(session, course_data, semester_data, worker_id, semaphore)
+        
+        # 统计信息
+        stats['total_attempts'] += 1
+        
+        if status == 'SUCCESS':
+            stats['success_count'] += 1
+            # 成功后不再放回队列
+        elif status == 'PERM_FAIL':
+            stats['perm_fail_count'] += 1
+            # 永久失败也不再放回队列
+        else:  # TEMP_FAIL
+            stats['temp_fail_count'] += 1
+            await queue.put(course_data)  # 放回队列继续尝试
+            # 添加微小延迟避免过于频繁的重试
+            await asyncio.sleep(random.uniform(0.1, 0.3))
+        
         queue.task_done()
 
 async def run_mode_aggressive(sid, pwd, course_list, semester_data):
-    """模式2：性能至上模式的运行逻辑。"""
+    """模式2：性能至上模式的运行逻辑 - 优化版。"""
     print("\n" + "="*20 + " 模式2：性能至上模式 " + "="*20)
     print(f"{FAIL}警告: 您正在使用高风险模式。并发数: {AGGRESSIVE_CONCURRENCY}。")
     print(f"{FAIL}此模式会忽略SSL证书验证，请确保网络环境安全！")
@@ -247,36 +329,158 @@ async def run_mode_aggressive(sid, pwd, course_list, semester_data):
         print(ERROR + "为激进模式创建异步会话失败，请检查网络或CAS状态。")
         return
         
-    queue = asyncio.Queue()
+    queue = asyncio.Queue(maxsize=1000)  # 限制队列大小
     for course in course_list:
         await queue.put(course)
+
+    # 使用信号量控制并发数
+    semaphore = asyncio.Semaphore(AGGRESSIVE_CONCURRENCY)
+    
+    # 统计信息
+    stats = {
+        'total_attempts': 0,
+        'success_count': 0,
+        'perm_fail_count': 0,
+        'temp_fail_count': 0
+    }
 
     print(f"{INFO}启动 {AGGRESSIVE_CONCURRENCY} 个并发任务... 按 Ctrl+C 停止。")
     
     tasks = []
     for i in range(AGGRESSIVE_CONCURRENCY):
-        task = asyncio.create_task(worker_async(i + 1, session, semester_data, queue))
+        task = asyncio.create_task(worker_async(i + 1, session, semester_data, queue, semaphore, stats))
         tasks.append(task)
+    
+    # 创建一个统计任务
+    async def print_stats():
+        while True:
+            await asyncio.sleep(10)  # 每10秒打印一次统计
+            print(f"{INFO}统计: 总请求 {stats['total_attempts']}, 成功 {stats['success_count']}, 永久失败 {stats['perm_fail_count']}, 临时失败 {stats['temp_fail_count']}")
+    
+    stats_task = asyncio.create_task(print_stats())
+    
+    try:
+        await queue.join()  # 等待所有课程被处理
+    except KeyboardInterrupt:
+        print(f"\n{INFO}收到用户中断信号。")
+    finally:
+        # 取消所有任务
+        stats_task.cancel()
+        for task in tasks:
+            task.cancel()
+        await asyncio.gather(*tasks, stats_task, return_exceptions=True)
         
-    await queue.join() # 等待所有课程被处理
-    
-    for task in tasks:
-        task.cancel()
-    await asyncio.gather(*tasks, return_exceptions=True)
-    
-    await session.close()
-    print(f"\n{SUCCESS}所有课程均已处理（成功或永久失败），任务结束。")
+        await session.close()
+        print(f"\n{SUCCESS}所有课程均已处理（成功或永久失败），任务结束。")
+        print(f"{INFO}最终统计: 总请求 {stats['total_attempts']}, 成功 {stats['success_count']}, 永久失败 {stats['perm_fail_count']}, 临时失败 {stats['temp_fail_count']}")
 
-# ==============================================================================
-# sección 3: 主程序入口
-# ==============================================================================
+def get_user_config():
+    """获取用户自定义配置。"""
+    global AGGRESSIVE_CONCURRENCY, SAFE_INTERVAL, SAFE_MAX_BURST
+    
+    print(f"\n{INFO}当前配置:")
+    print(f"  激进模式并发数: {AGGRESSIVE_CONCURRENCY}")
+    print(f"  安全模式间隔: {SAFE_INTERVAL}秒")
+    print(f"  安全模式突发数: {SAFE_MAX_BURST}")
+    
+    if input(f"\n是否要修改配置? (y/N): ").lower() == 'y':
+        try:
+            new_concurrency = input(f"输入激进模式并发数 (当前: {AGGRESSIVE_CONCURRENCY}, 建议 30-100): ")
+            if new_concurrency.strip():
+                AGGRESSIVE_CONCURRENCY = max(1, min(200, int(new_concurrency)))
+                
+            new_interval = input(f"输入安全模式间隔秒数 (当前: {SAFE_INTERVAL}, 建议 0.5-3): ")
+            if new_interval.strip():
+                SAFE_INTERVAL = max(0.1, min(10, float(new_interval)))
+                
+            new_burst = input(f"输入安全模式突发数 (当前: {SAFE_MAX_BURST}, 建议 1-5): ")
+            if new_burst.strip():
+                SAFE_MAX_BURST = max(1, min(10, int(new_burst)))
+                
+            print(f"{SUCCESS}配置已更新!")
+        except ValueError:
+            print(f"{ERROR}输入格式错误，使用默认配置。")
+
+def wait_until_start_time(start_datetime):
+    """等待到指定的开始时间。"""
+    now = datetime.now()
+    if now >= start_datetime:
+        print(f"{INFO}已到达开始时间，立即开始抢课！")
+        return
+    
+    wait_seconds = (start_datetime - now).total_seconds()
+    print(f"{INFO}距离开始时间还有 {wait_seconds:.0f} 秒 ({start_datetime.strftime('%Y-%m-%d %H:%M:%S')})")
+    print(f"{INFO}脚本将自动等待，请保持程序运行...")
+    
+    # 显示倒计时
+    while True:
+        now = datetime.now()
+        if now >= start_datetime:
+            print(f"\n{SUCCESS}时间到！开始抢课！")
+            break
+        
+        remaining = (start_datetime - now).total_seconds()
+        if remaining <= 0:
+            break
+            
+        # 每秒更新一次倒计时显示
+        hours = int(remaining // 3600)
+        minutes = int((remaining % 3600) // 60)
+        seconds = int(remaining % 60)
+        print(f"\r{INFO}倒计时: {hours:02d}:{minutes:02d}:{seconds:02d}", end="", flush=True)
+        time.sleep(1)
+    
+    print()  # 换行
+
+def get_scheduled_start_time():
+    """获取用户设置的定时开始时间。"""
+    print(f"\n{INFO}定时抢课功能")
+    print("请输入抢课开放时间，脚本将提前10分钟自动开始运行")
+    
+    while True:
+        try:
+            # 获取日期
+            date_input = input("请输入日期 (格式: YYYY-MM-DD，如 2025-09-07): ").strip()
+            if not date_input:
+                return None
+            
+            # 获取时间
+            time_input = input("请输入时间 (格式: HH:MM，如 13:00): ").strip()
+            if not time_input:
+                return None
+            
+            # 解析日期时间
+            datetime_str = f"{date_input} {time_input}"
+            target_datetime = datetime.strptime(datetime_str, "%Y-%m-%d %H:%M")
+            
+            # 提前10分钟
+            start_datetime = target_datetime - timedelta(minutes=10)
+            
+            print(f"{SUCCESS}设置成功！")
+            print(f"  抢课开放时间: {target_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
+            print(f"  脚本开始时间: {start_datetime.strftime('%Y-%m-%d %H:%M:%S')} (提前10分钟)")
+            
+            # 检查时间是否合理
+            now = datetime.now()
+            if start_datetime <= now:
+                print(f"{FAIL}警告: 设置的时间已经过去或即将到达，脚本将立即开始运行")
+            
+            confirm = input(f"\n确认使用此时间设置吗? (y/N): ").strip().lower()
+            if confirm == 'y':
+                return start_datetime
+            else:
+                print(f"{INFO}重新设置时间...")
+                
+        except ValueError as e:
+            print(f"{ERROR}时间格式错误，请重新输入。错误: {e}")
+        except Exception as e:
+            print(f"{ERROR}输入处理失败: {e}")
 
 def main():
     """主程序"""
     print("="*20 + " 南科大TIS喵课助手 " + "="*20)
     print(f"{FAIL}本脚本仅供学习交流使用，滥用可能导致账号被封禁，后果自负。")
 
-    # 1. 加载目标课程
     if not os.path.exists(CLASS_CACHE_PATH):
         print(ERROR + f"未找到课程列表文件 '{CLASS_CACHE_PATH}'，请创建并填入课程全名。")
         return
@@ -286,17 +490,47 @@ def main():
         print(ERROR + f"'{CLASS_CACHE_PATH}' 为空，无目标课程。")
         return
 
-    # 2. 同步登录
+    # 定时功能选择
+    print(f"\n{INFO}是否要使用定时抢课功能？")
+    use_schedule = input("输入 'y' 启用定时功能，直接回车立即开始: ").strip().lower()
+    
+    start_time = None
+    if use_schedule == 'y':
+        start_time = get_scheduled_start_time()
+        if start_time is None:
+            print(f"{INFO}取消定时设置，直接开始抢课")
+
+    # 登录部分
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
     
     sid = input("请输入您的学号: ")
     pwd = getpass("请输入CAS密码 (输入时不可见): ")
-    if not cas_login_sync(session, sid, pwd):
-        print(ERROR + "登录失败，程序退出。")
-        return
+    
+    # 如果设置了定时，先登录验证账户
+    if start_time:
+        print(f"\n{INFO}正在验证登录信息...")
+        if not cas_login_sync(session, sid, pwd):
+            print(ERROR + "登录失败，请检查账户密码后重试。")
+            return
+        print(f"{SUCCESS}账户验证成功！")
+        
+        # 等待到开始时间
+        wait_until_start_time(start_time)
+        
+        # 重新登录（防止会话过期）
+        print(f"{INFO}重新登录以确保会话有效...")
+        session = requests.Session()
+        session.headers.update({"User-Agent": USER_AGENT})
+        if not cas_login_sync(session, sid, pwd):
+            print(ERROR + "重新登录失败，程序退出。")
+            return
+    else:
+        # 直接登录
+        if not cas_login_sync(session, sid, pwd):
+            print(ERROR + "登录失败，程序退出。")
+            return
 
-    # 3. 获取学期和课程信息
     try:
         response = session.post(f"{TIS_BASE_URL}/Xsxk/queryXkdqXnxq", data={"mxpylx": 1}, timeout=10)
         semester_info = response.json()
@@ -310,7 +544,6 @@ def main():
         print(ERROR + "获取课程总表失败，程序退出。")
         return
 
-    # 4. 准备最终待抢列表
     final_course_list = []
     for name in target_course_names:
         if name in all_courses:
@@ -331,8 +564,8 @@ def main():
     # 5. 模式选择
     while True:
         print("\n请选择运行模式:")
-        print(f"  [{Fore.CYAN}1{Style.RESET_ALL}] {Fore.GREEN}安全稳定模式{Style.RESET_ALL} (适合捡漏，低风险)")
-        print(f"  [{Fore.CYAN}2{Style.RESET_ALL}] {Fore.RED}性能至上模式{Style.RESET_ALL} (适合开抢瞬间，高风险)")
+        print(f"  [{Fore.CYAN}1{Style.RESET_ALL}] {Fore.GREEN}安全稳定模式{Style.RESET_ALL} (适合捡漏，低风险，1秒间隔可突发{SAFE_MAX_BURST}次请求)")
+        print(f"  [{Fore.CYAN}2{Style.RESET_ALL}] {Fore.RED}性能至上模式{Style.RESET_ALL} (适合开抢瞬间，高风险，{AGGRESSIVE_CONCURRENCY}个并发请求)")
         print(f"  [{Fore.CYAN}0{Style.RESET_ALL}] 退出")
         mode = input("请输入你的选择: ")
         
