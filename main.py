@@ -4,7 +4,7 @@
 """
 sustech_grabber.py - 南科大TIS喵课助手 (最终决战版)
 
-集成了安全稳定模式与性能至上模式，请按需选择。
+集成了安全稳定模式与性能模式，请按需选择。
 祝你好运！
 
 @CreateDate 2021-1-9
@@ -206,7 +206,7 @@ def run_mode_safe(session, course_list, semester_data):
                         course_list.remove(course)
 
 # ==============================================================================
-# sección 2: 异步函数 (用于性能至上模式)
+# sección 2: 异步函数 (用于性能模式)
 # ==============================================================================
 
 async def cas_login_async(sid, pwd):
@@ -319,8 +319,8 @@ async def worker_async(worker_id, session, semester_data, queue, semaphore, stat
         queue.task_done()
 
 async def run_mode_aggressive(sid, pwd, course_list, semester_data):
-    """模式2：性能至上模式的运行逻辑 - 优化版。"""
-    print("\n" + "="*20 + " 模式2：性能至上模式 " + "="*20)
+    """模式2：性能模式的运行逻辑 - 优化版。"""
+    print("\n" + "="*20 + " 模式2：性能模式 " + "="*20)
     print(f"{FAIL}警告: 您正在使用高风险模式。并发数: {AGGRESSIVE_CONCURRENCY}。")
     print(f"{FAIL}此模式会忽略SSL证书验证，请确保网络环境安全！")
     
@@ -432,7 +432,7 @@ def wait_until_start_time(start_datetime):
     
     print()  # 换行
 
-def get_scheduled_start_time():
+def get_scheduled_start_time(selected_mode=None):
     """获取用户设置的定时开始时间。"""
     print(f"\n{INFO}定时抢课功能")
     print("请输入抢课开放时间，脚本将提前10分钟自动开始运行")
@@ -454,11 +454,16 @@ def get_scheduled_start_time():
             target_datetime = datetime.strptime(datetime_str, "%Y-%m-%d %H:%M")
             
             # 提前10分钟
-            start_datetime = target_datetime - timedelta(minutes=10)
+            start_datetime = target_datetime - timedelta(minutes=2)
             
             print(f"{SUCCESS}设置成功！")
             print(f"  抢课开放时间: {target_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
-            print(f"  脚本开始时间: {start_datetime.strftime('%Y-%m-%d %H:%M:%S')} (提前10分钟)")
+            print(f"  脚本开始时间: {start_datetime.strftime('%Y-%m-%d %H:%M:%S')} (提前2分钟)")
+            
+            # 显示预选模式
+            if selected_mode:
+                mode_name = "安全稳定模式" if selected_mode == '1' else "性能模式"
+                print(f"  预选模式: {mode_name}")
             
             # 检查时间是否合理
             now = datetime.now()
@@ -495,10 +500,29 @@ def main():
     use_schedule = input("输入 'y' 启用定时功能，直接回车立即开始: ").strip().lower()
     
     start_time = None
+    selected_mode = None
+    
     if use_schedule == 'y':
-        start_time = get_scheduled_start_time()
+        # 先选择抢课模式
+        print(f"\n{INFO}请先选择抢课模式（时间到了将自动使用此模式）:")
+        while True:
+            print(f"  [{Fore.CYAN}1{Style.RESET_ALL}] {Fore.GREEN}安全稳定模式{Style.RESET_ALL} (适合捡漏，低风险，1秒间隔可突发{SAFE_MAX_BURST}次请求)")
+            print(f"  [{Fore.CYAN}2{Style.RESET_ALL}] {Fore.RED}性能模式{Style.RESET_ALL} (适合开抢瞬间，高风险，{AGGRESSIVE_CONCURRENCY}个并发请求)")
+            mode_choice = input("请选择模式 (1或2): ").strip()
+            
+            if mode_choice in ['1', '2']:
+                selected_mode = mode_choice
+                mode_name = "安全稳定模式" if mode_choice == '1' else "性能模式"
+                print(f"{SUCCESS}已选择: {mode_name}")
+                break
+            else:
+                print(f"{ERROR}输入无效，请输入1或2")
+        
+        # 再设置时间
+        start_time = get_scheduled_start_time(selected_mode)
         if start_time is None:
             print(f"{INFO}取消定时设置，直接开始抢课")
+            selected_mode = None
 
     # 登录部分
     session = requests.Session()
@@ -561,29 +585,43 @@ def main():
         print(f"{SUCCESS}{c_name:<30} (ID: {c_id})")
     print("="*55)
     
-    # 5. 模式选择
-    while True:
-        print("\n请选择运行模式:")
-        print(f"  [{Fore.CYAN}1{Style.RESET_ALL}] {Fore.GREEN}安全稳定模式{Style.RESET_ALL} (适合捡漏，低风险，1秒间隔可突发{SAFE_MAX_BURST}次请求)")
-        print(f"  [{Fore.CYAN}2{Style.RESET_ALL}] {Fore.RED}性能至上模式{Style.RESET_ALL} (适合开抢瞬间，高风险，{AGGRESSIVE_CONCURRENCY}个并发请求)")
-        print(f"  [{Fore.CYAN}0{Style.RESET_ALL}] 退出")
-        mode = input("请输入你的选择: ")
+    # 模式选择和执行
+    if selected_mode:
+        # 定时模式，直接执行预选的模式
+        mode_name = "安全稳定模式" if selected_mode == '1' else "性能模式"
+        print(f"\n{INFO}开始执行预选模式: {mode_name}")
         
-        if mode == '1':
+        if selected_mode == '1':
             run_mode_safe(session, final_course_list, semester_info)
-            break
-        elif mode == '2':
+        else:  # selected_mode == '2'
             try:
-                # 激进模式需要重新传入sid和pwd以创建独立的异步会话
                 asyncio.run(run_mode_aggressive(sid, pwd, final_course_list, semester_info))
             except KeyboardInterrupt:
                 print("\n" + INFO + "收到用户中断信号。")
-            finally:
+    else:
+        # 手动选择模式
+        while True:
+            print("\n请选择运行模式:")
+            print(f"  [{Fore.CYAN}1{Style.RESET_ALL}] {Fore.GREEN}安全稳定模式{Style.RESET_ALL} (适合捡漏，低风险，1秒间隔可突发{SAFE_MAX_BURST}次请求)")
+            print(f"  [{Fore.CYAN}2{Style.RESET_ALL}] {Fore.RED}性能模式{Style.RESET_ALL} (适合开抢瞬间，高风险，{AGGRESSIVE_CONCURRENCY}个并发请求)")
+            print(f"  [{Fore.CYAN}0{Style.RESET_ALL}] 退出")
+            mode = input("请输入你的选择: ")
+            
+            if mode == '1':
+                run_mode_safe(session, final_course_list, semester_info)
                 break
-        elif mode == '0':
-            break
-        else:
-            print(ERROR + "输入无效，请重新输入。")
+            elif mode == '2':
+                try:
+                    # 激进模式需要重新传入sid和pwd以创建独立的异步会话
+                    asyncio.run(run_mode_aggressive(sid, pwd, final_course_list, semester_info))
+                except KeyboardInterrupt:
+                    print("\n" + INFO + "收到用户中断信号。")
+                finally:
+                    break
+            elif mode == '0':
+                break
+            else:
+                print(ERROR + "输入无效，请重新输入。")
 
 if __name__ == '__main__':
     try:
